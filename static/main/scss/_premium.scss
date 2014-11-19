@@ -1,0 +1,351 @@
+$blue:#262f34;
+$dark_blue:#1a1f22;
+$background_light_grey:#f2f3f5;
+$dark-grey:#a0a5a7;
+$light-grey:#a3a3a3;
+$text_grey:#72777a;
+
+$uppercase-spacing:0.10em;
+
+/***********
+Anchor reset
+*************/
+a[name]{padding-top:40px; margin-top:-40px; display:inline-block;}
+
+/***********
+Premium page base styles
+*************/
+
+.premium-div {padding: 75px 0px;
+	h1 {@include uppercase-text; color:#000; font-weight:700; font-size:14px; margin-bottom:10px; @include smooth-text; letter-spacing: 0.2em;}
+	h2 {font-size: 16px;}
+	h3.description {color:$text_grey; font-size:17px; font-weight:400; width:700px; margin:auto;}
+	hr {width:50px; text-align: center; height:2px; border:none; background:lighten($dark-grey, 20%); margin:0px auto 10px;}
+}
+
+.premium-div.white {background: #FFFFFF;}
+.premium-div.grey {background: $background_light_grey;}
+.premium-div.blue {background: $blue;}
+.premium-div.dark-blue {background: $dark-blue;}
+.premium-div.syllabus {background-image:url(../images/pro_landing/background_div3@2x.jpg); background-size:cover; background-repeat:no-repeat; background-attachment: fixed;}
+.premium-div.testimonials {background-image:url(../images/pro_landing/background_div5@2x.jpg); background-size:cover; background-repeat:no-repeat; background-attachment: fixed;}
+
+.enroll-button {@extend %button; display: inline-block; @include border-radius(2px); font-size: 17px; font-weight: 600; letter-spacing: 0.025em;
+    @include smooth_text; text-transform: none; height: 58px; line-height: 58px; padding: 0; width: 200px; margin-left: auto; margin-right: auto;
+	&:hover {color:#FFFFFF; background:darken($orange, 10%);}
+}
+.bottom-enroll-button {@extend .enroll-button; margin-top: 20px;}
+
+/* Mobile-only scroll down button that replaces the enroll today button */
+#learn-more {display: none;}
+
+/***********
+Topbar
+*************/
+
+/* The fade animation that we have in core.css breaks the fixed backgrounds/parallax effect in Chrome */
+.body-container{padding-top:0px; -webkit-animation: none; opacity: 1;}
+
+.nav{width:1208px; margin:auto; position:relative;}
+
+/* This placeholder is for styles common to both topbars */
+%premium-topbar {@extend %topbar;
+    .dl-logo {height:auto; width:150px; margin:28px 20px 0 20px;}
+    .nav-right {float:none; position:absolute; top:0px; right:0px; height:73px;}
+
+    dl.sub-nav {margin-right:150px; -webkit-margin-before:0em; -webkit-margin-after:0em; border-collapse: collapse; margin-top:0px;
+        dd {display:inline-block; @include uppercase-text; margin:0px; font-size: 12px;
+            a {color:$text_grey; padding:0px 15px; vertical-align: middle; display: inline-block; @extend %smooth-color-hover;}
+        }
+        dd.active a {color:$orange;}
+    }
+}
+
+/* We can put a single class on the HTML element since we use @extend here. We define styles
+   specific to the slidedown topbar below */
+.premium-slidedown-topbar {@extend %premium-topbar; position: fixed; z-index: 11; background: #fff; top: -73px; height:73px;
+    .dl-logo {margin-top: 23px;}
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+
+    dl.sub-nav {margin-right:150px; margin-top:0px;
+        dd {
+            a {height:73px; line-height: 73px;}
+            a:hover {color:$orange;}
+        }
+    }
+
+    #cta-button {position:absolute; width:130px; height:50px; right:0px; top:10px; background:$orange; text-align: center;
+        @include border-radius(2px); @extend %smooth-background-hover;
+
+        h3 {color:lighten($orange, 30%); font-size:11px; line-height:1; padding:5px; margin-top:7px; font-weight:400;}
+        h2 {@include uppercase-text; font-size: 12px; color:#FFFFFF; padding:0px; margin:0px; line-height:1;}
+        &:hover {background:darken($orange, 10%);}
+    }
+}
+
+/* Same as slidedown topbar except this is the static variant */
+.premium-static-topbar {@extend %premium-topbar; top: 25px;
+    dl.sub-nav {margin-top:15px; margin-right:0px;
+        dd {position: relative;
+            a {height:50px; line-height:50px;}
+            a:hover {background: none; color: #fff;}
+            a:after {opacity: 0; content:''; position:absolute; bottom: 14px; left: 22px; right: 22px; height:2px; background: $orange; border:none; @include transition(opacity, 0.2s);}
+            a:hover:after {opacity: 1;}
+        }
+    }
+}
+
+
+/***********
+'Hero unit' div
+************/
+.premium-page-intro {height:700px; background:$blue; background-size: cover; background-image:url(../images/pro_landing/hero@2x.jpg); background-attachment: fixed; overflow: hidden; position: relative;
+    h1 {@extend %heading-1; line-height:1.1; opacity:1; position:relative; color:#ffffff; padding-top:200px; font-size: 60px; margin-bottom: 20px; margin-top: 50px;}
+    p {color:#FFFFFF; margin-bottom:50px;text-shadow:0px 0px 3px rgba(0,0,0,0.4); font-size:18px; font-weight:500; -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility; position: relative; line-height: 1.5;}
+    .enroll-button {position: relative;}
+    .shadow {position: absolute; width:100%; height: 700px; background: rgba(0,0,0,0.10);}
+    .call-to-action {position:absolute; bottom: 20px; left:50%; margin-left:-12px;;
+        i {color: #fff; font-size:30px; margin:auto; @include animation(bounce 2s ease 0 2); position: relative;}
+    }
+}
+
+
+/***********
+'Designlab method' div
+************/
+
+.method {
+    h1 {color:#000;}
+}
+
+.col-three.method {
+    h2 {@include uppercase-text; color:#000; margin-bottom:10px;}
+    p {@include small-text; margin-bottom:0;}
+    img {margin-bottom:20px;}
+}
+
+/*************
+'Mentors' div
+************/
+
+.mentors .col-three {text-align:center;
+    img {margin-bottom:20px; width:100px; height:auto; @include border-radius(50%);}
+    h2 {color:$orange; font-weight:600; line-height:20px;}
+    h3 {@include uppercase-text; font-size: 12px;}
+    p {@include small-text; display:none;}
+    a {@include transition(opacity, 0.2s);}
+    a:hover {opacity:0.8;}
+}
+
+/***********
+'Testimonials' div
+************/
+.testimonials {
+    h1 {color:#fff;}
+    .carousel {background-color: none; margin: 0 auto 0 auto; max-width: 900px; height: 350px; position:relative;
+        .testimonial {color: #fff;
+            .quote {margin: 20px auto 30px 0; width: 98%; background-color: $orange; padding: 30px; @include border-radius(4px);
+                @include smooth-text; color:#fff; text-align:left; font-weight:500; font-size:15px; line-height:1.4;
+                position:relative;}
+            .quote:after{top: 100%; left: 45px; border: solid transparent; content: " "; height: 0; width: 0;
+                    position: absolute; pointer-events: none; border-color: rgba(213, 98, 44, 0); border-top-color: $orange;
+                    border-width: 15px;}
+            .student{ display:table;
+                img{@include border-radius(50%); width:120px; display:table-cell; vertical-align: middle;}
+                .info{display:table-cell; vertical-align: middle; padding-left:15px; text-align:left;
+                    h2{@include smooth-text; color:#fff; line-height:1; font-weight:700; margin:10px 0px;}
+                    p{@include smooth-text; color:#fff; line-height:1; font-size:14px; font-weight:600; font-style:italic;}
+                }
+            }
+        }
+        .slick-dots {margin: 0; bottom: 5px;
+            li {border: 2px solid #fff; @include border-radius(50%); height: 15px; width: 15px;}
+            li.slick-active {background-color: #fff;}
+            li a:before {content: '';}
+        }
+    }
+}
+
+/***********
+'Syllabus' div
+************/
+
+ul.weeks {width:800px; margin:auto; list-style:none;
+    li {float:left; width:25%; @include uppercase-text; font-size: 12px; color:#fff; padding:10px 0px; margin:0px; border:1px solid $orange;
+        cursor:pointer;
+        &.selected{background:$orange;}
+        &:first-child{-webkit-border-radius:5px 0 0 5px; -moz-border-radius:5px 0 0 5px; -o-border-radius:5px 0 0 5px; border-radius:5px 0 0 5px;}
+        &:last-child{-webkit-border-radius:0 5px 5px 0; -moz-border-radius:0 5px 5px 0; -o-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0;}
+    }
+}
+
+.syllabus {
+    h1 {color:#fff; margin-bottom: 30px;}
+}
+
+.row.syllabus {display:table; width:900px; position: relative; margin-top: 0;
+    .week-container {position: absolute;
+        .unit-container {margin-top: 30px;}
+    }
+    .col-three {
+        text-align: center; display:table-cell; float:none; vertical-align: middle; width:40%;
+        img {width:75px; height: 75px;}
+        h2 {color:#fff; @include uppercase-text;}
+    }
+
+    .col-twothird { //background:#FFFFFF; border-left:5px solid $orange;
+        padding:20px 40px; display:table-cell; float:none; width:60%; height:100%;
+        .left {display:table-cell; vertical-align: middle; width:100px; text-align: left; padding-left:10px;}
+        .right {display:table-cell;}
+        p {font-size:14px; font-weight:400; color:#fff; line-height: 1.8; text-align: left; margin:0px;}
+    }
+}
+
+/*************
+'FAQ' div
+************/
+
+div.row.faq {margin-top: 20px;
+    div {text-align: left;}
+    i {color: $light-grey; position: relative; top: 2px; margin-right: 10px; font-size: 20px;}
+    p {@include small-text; margin-left: 20px; font-size:15px;}
+    .questions-left {float: left; width: 275px;
+        li {padding: 10px 0 10px 0;
+            a {@include uppercase-text; color: $light-grey; font-size: 14px; padding: 10px 5px 10px 0; display: inline-block;}
+            a.selected {border-bottom: 2px solid $orange; margin-bottom: -2px; color: #000;}
+        }
+    }
+    .answers-right {overflow:hidden; @include smooth-text;
+        li {color: #3b3f40; padding: 15px 15px 5px 35px;
+            h3 {font-size:16px; color: #666;}
+            p {font-size:14px; line-height:1.8; margin-bottom: 9px;}
+        }
+    }
+}
+
+/*************
+'Bottom call-to-action' div
+************/
+
+.premium-div.blue {
+    h1 {color:#fff;}
+    hr {border:none; background:darken($text_grey, 20%);}
+    h3 {color:darken(#FFFFFF, 10%); font-weight:300; letter-spacing: 0.02em; margin-bottom:60px;}
+    p, span {@include uppercase-text; font-size: 12px; font-weight:700; color:lighten(#4a5157, 15%); line-height:1.6;}
+    span.grey {font-size:16px;}
+    span.strikethrough {position:relative;}
+    span.strikethrough:before {position: absolute; content: ""; left: 0; top: 38%; right: 0; border-top: 2px solid; border-color: red;
+        -webkit-transform: rotate(-8deg);-moz-transform: rotate(-8deg); -ms-transform: rotate(-8deg); -o-transform: rotate(-8deg);
+        transform: rotate(-8deg); opacity: .7;}
+    .signup-mobile {display:none;}
+}
+
+/*************
+'Contact info' div
+************/
+
+.premium-div.dark-blue {
+    h3 {@include uppercase-text; font-size: 12px; font-weight:700; color:lighten($footer-text-color, 15%); line-height:1.6;}
+    a {color:lighten($footer-text-color, 15%);}
+    a:hover {opacity: .8;}
+    .icon-links {margin:40px 0px; display:block;
+        a {color:$dark-blue; background:none;}
+        a:first-child {margin-right:20px;}
+        i:hover {color:$blue;}
+        i {border-radius:50%; border:10px solid lighten($footer-text-color, 21%); background:#393e41; font-size:1.3em;}
+    }
+}
+
+
+/*************
+Responsive styles
+************/
+@media screen and (min-width: $break-x-large) {
+    .premium-page-intro {background-position:0 -250px;}
+}
+
+@media screen and (max-width: $break-medium) {
+    .nav {width:auto!important;}
+
+    /* Magellan gets fucked on iPad so don't show the nav */
+    .premium-slidedown-topbar {display: none;}
+    .premium-static-topbar {
+        .nav-right {display: none;}
+    }
+
+    #cta-button {display:none;}
+    .body-container {padding-top:0px;}
+    .container {padding:0px!important; float:none;}
+    .container .row {margin-left:0px; width:auto;}
+    .premium-page-intro {background-attachment: scroll; background-position:0 0px;
+        .background {background-position:0 0px;}
+        h1.b {font-size: 44px; padding-top:100px;}
+    }
+
+    .row.syllabus {
+        .col-three {float:none; display:block; width:100%; text-align: center; margin-bottom:20px;}
+        .col-twothird {float:none; width:100%; display:block;}
+    }
+
+    /* Temporarily hide syllabus & FAQ sections on small width. We need to design & code
+       up responsive styles for these */
+    .premium-div {
+        &.syllabus {display: none;}
+        &.faq-cont {
+            .questions-left {float:none!important; width:auto !important; text-align:center;
+                li {padding: 10px 0 10px 0;}
+            }
+            .answers-right {overflow:hidden;
+                li {padding:10px!important;}
+            }
+        }
+        &+a {display: none;}
+
+        &.testimonials {
+            .carousel {margin: 0 50px 0 50px;}
+        }
+    }
+
+}
+
+@media screen and (max-width: $break-small - 1){
+    /* no olark */
+    #habla_beta_container_do_not_rely_on_div_classes_or_names {display: none;}
+
+    /* Mobile-only scroll down button that replaces the enroll today button */
+    #learn-more {display: block;}
+    #enroll-today {display: none;}
+
+    .premium-static-topbar {display: none;}
+    .dl-logo {display:none;}
+
+    .container {
+        .columns {float:none; width:100%; margin-bottom:40px;}
+        .row {margin-top: 30px;}
+    }
+    .premium-page-intro {background-position:-250px 0px; height:500px; padding:0px 10px;
+        .shadow {display: none;}
+        .call-to-action {display: none;}
+        h1 {font-size:32px; padding-top:80px; margin-bottom: 25px;}
+        p {margin-bottom:30px; font-size: 15px;}
+    }
+    .premium-div {padding: 30px 0px;
+        h3.description {font-size:16px; width:100%; padding:20px; margin-bottom: 30px;}
+        &.mentors .row:last-child {display:none;}
+        &.mentor-info {padding:80px 0px;}
+    }
+
+    .premium-div.testimonials {
+        .carousel {height: 400px; margin-left: auto; margin-right: auto;}
+        .testimonial {padding: 0 20px;}
+        .student img {width: 80px;}
+    }
+
+    .pricing {display:none;}
+    .signup-mobile {display:block!important;
+        input {padding: 10px; margin-top: 10px; width: 250px;}
+        h3.description {padding-left: 35px; padding-right: 35px;}
+        .enroll-button {border-bottom: none; text-transform: none;}
+    }
+}

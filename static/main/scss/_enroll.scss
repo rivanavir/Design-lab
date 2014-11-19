@@ -1,0 +1,202 @@
+body.enroll {
+    background: #efefef dl-url('main', 'images/homepage_v2/background3.png'); background-repeat:repeat; background-size:100%;
+    background:$midnight-blue;
+    background:#1285c6;
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -webkit-linear-gradient(#1285c6 10%, #129ec6 90%); /* Chrome 10+, Saf5.1+ */
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -moz-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* FF3.6+ */
+  background:  dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -ms-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* IE10 */
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -o-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* Opera 11.10+ */
+  background:  dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, linear-gradient(#2884C9 10%, #3C9EC8 90%); /* W3C */
+  height:100%;
+}
+
+#enroll {
+    h3 {color: $light-grey; font-size: 14px; font-weight: 400; margin-top: 12px; line-height: normal;}
+
+    #steps-bar {width: 100%; margin: 0 auto; height: 110px; width: 640px; background-color: #fff;
+        .step {width: 155px; height: 100%; display: inline-block; text-align: center; position: relative;
+            &.current {
+                &:after {top: 100%; left: 61px; border: 17px solid transparent; content: " "; height: 0; width: 0;
+                    position: absolute; border-top-color: #fff;}
+                &> .step-num {background-color: #3e94cd;}
+            }
+
+            .step-num {@extend %circle; width: 32px; height: 32px; color: #fff; background-color: $light-grey; line-height: 1.85;
+                font-size:19px; font-weight: 700; margin: 25px auto 0 auto;
+            }
+        }
+    }
+
+    #mid-bg {overflow: hidden;}
+
+    #enroll-logo{padding:60px 0px; position:relative; width:140px; margin:auto;}
+
+    .enroll-form {@extend %signup-form; @extend %fadeIn;
+        p {font-size: 16px; line-height: 1.5}
+
+        span.strikethrough {position:relative;}
+        span.strikethrough:before {position: absolute; content: ""; left: 0; top: 38%; right: 0; border-top: 2px solid; border-color: red;
+            -webkit-transform: rotate(-8deg);-moz-transform: rotate(-8deg); -ms-transform: rotate(-8deg); -o-transform: rotate(-8deg);
+            transform: rotate(-8deg); opacity: .7;}
+        .signup-mobile {display:none;}
+
+        .top-section h3.bottom-right {float: right; text-align: right; font-size: 14px; margin-top: 4px;
+            span {font-size: 16px; font-weight: 700; letter-spacing: 0.03em; @extend %smooth-text;}
+        }
+        .user-form {
+            input {width: 438px;}
+        }
+        .billing-form {
+            input {
+                &.cc {width: 200px;}
+                &.cc-small {width: 100px;}
+                &.stripe-error {border-color: $orange;}
+            }
+
+            button.back-button {background-color: $light-grey; position: static; width: 100px; margin-top: 4px;}
+            button.enroll {width: 175px;}
+
+            label.fine-print {position: absolute; bottom: -9px; right: 26px; font-size: 11px; color: $light-grey; font-weight: 600;
+                @extend %smooth-text;
+            }
+
+            i {position: absolute; bottom: 24px; right: 12px; font-size: 21px;}
+            i.icon-check-sign {color: #76ba3a;}
+            i.icon-exclamation-sign {color: $orange;}
+
+            .cc-image {background-image: dl-url('store', 'images/cards@2x.png'); background-size: 100%;
+                width: 300px; height: 167px; margin: 15px auto 0 auto; position: relative;
+
+                label.stripe-error {position: absolute; color: $orange; top: -28px; left: -70px; font-size: 12px; width:430px;}
+
+                .cc-number-preview {position: absolute; color: $light-grey; font-size: 14px;
+                    top: 58px; left: 20px; letter-spacing: 2; font-weight: 200;
+
+                    span {@extend %fadeInDownFast; display: inline-block; float: left;}
+                }
+
+                h5 {@include prevent-flicker; position: absolute; color: $light-grey; left: 20px; top: 89px; font-weight: 400;}
+
+                %cc-logo {@extend %fadeInUp; position: absolute; width: 94px; height: 54px; bottom: 32px; right: 29px; background-size: 100%;}
+                .visa-logo {@extend %cc-logo; background-image: dl-url('store', 'images/visa-logo@2x.png');}
+                .amex-logo {@extend %cc-logo; background-image: dl-url('store', 'images/amex-logo@2x.png');}
+                .mastercard-logo {@extend %cc-logo; background-image: dl-url('store', 'images/mastercard-logo@2x.png');}
+            }
+        }
+
+
+        &.success-page, &.share-page {text-align: center;
+            #mobile-later{display:none;}
+            .welcome-image {width:390px;}
+            h1 {font-weight: 800; letter-spacing: 4.5;}
+            h3 {color: $charcoal; margin: 15px auto 20px auto; width: 360px; font-weight: 600;  color:$light-grey;
+                @extend %smooth-text;}
+            button{width:170px;}
+            
+            input {margin-left: auto; margin-right: auto; width: 200px; margin-bottom:15px;
+                &:focus {border-color: $very-light-grey;}
+            }
+        }
+
+        &.share-page{
+            .left{float:left; width:35%; padding:15px; 
+                img.share-image{width:50%; height:auto; margin:30px auto 10px;}
+                h1{font-size:18px; margin-bottom:10px; letter-spacing:1.2;}
+                h3.share {color: $text-grey; font-weight: 400; font-size: 13px; line-height: 1.4; margin-bottom:12px; width:auto;
+                    margin-top:0px;}
+                %social-button {display: inline-block; width: 200px; @extend %smooth-text; text-transform:none; letter-spacing:0px;
+                    font-size:13px;}
+                a.twitter-button {@extend %social-button; background-color: $twitter-blue; margin-bottom:10px; @extend %smooth_text;}
+                .facebook-button {@extend %social-button; background-color: $facebook-blue; @extend %smooth_text;}
+            }
+            .right{float:left; width:65%; height:100%; border-left:1px solid #ddd;
+                h2{font-weight:600; @extend %smooth_text; font-size:18px;}
+                img{margin:100px auto 30px;}
+                p{margin:0 auto 20px; letter-spacing:0px; font-size:15px; @extend %smooth-text; width:65%;}
+            }
+        }
+
+        .shipping-form {
+            input {
+                &.city {width: 285px;}
+                &.state {width: 130px;}
+                &.postal {width: 130px;}
+                &.country {width: 285px;}
+            }
+
+            button.no-thanks {background-color: $light-grey; right: 200px; width: 125px;}
+        }
+        .left-image-section {@extend %bottom-section; width: 250px;
+            .kit-image {height: 235px; margin:30px 0px 0px 60px;}
+        }
+    }
+
+    .below-form {@extend %fadeIn; position: absolute; width: 760px; left: 50%; margin-left: -380px; margin-top: 490px; z-index: -100;
+        .testimonial {display: inline-block; width: 230px; margin-right:20px;
+            h3 {color: $light-grey; font-size:13px; @extend %smooth-text;}
+            .student {display: table; margin-top: 25px;
+                img {@include circle; display: table-cell; width: 50px; height:50px;}
+                .info {display: table-cell; vertical-align: middle; padding-left: 10px;
+                    label {@extend %smooth-text; color: $light-grey; display: block;}
+                    label.name {font-size: 16px; font-weight: 700;}
+                }
+            }
+            &:first-child{margin-left:20px;}
+            &:last-child{margin-right:0px;}
+        }
+        &.money-back{ margin-top:470px; 
+            h3{font-size:15px; @extend %smooth-text;}
+            i{margin-right:7px;}    
+        }
+        
+    }
+}
+
+
+
+@media screen and (max-width: $break-x-small){
+    #enroll{ padding:15px;
+        .enroll-form{position:relative; width:auto; left:auto; margin-left:0px; height:auto;
+            .top-section h3.bottom-right{float:none; text-align:left; margin-bottom:10px;}
+            .left-form-section{width:100%; height:auto;
+                button{position:relative; float:right; right:0px; bottom:0px;}
+            }
+            .billing-form button.back-button{margin-top:0px;}
+            .user-form{ input{width:100%;} }
+            .right-benefits-section{width:100%; float:none; background:$light-grey-background; height:auto;
+                @include border-bottom-left-radius(4px); @include border-bottom-right-radius(4px);
+                .header-section{width:100%; margin-left:0px;}
+                .benefit-row{text-align:center; padding:15px 0px;
+                    .benefit-copy{float:none; width:auto; margin-top:0px; padding:10px;}
+                }
+            }
+            .left-photo-section,.left-photo-section .photo-tips{width:100%;}
+            .right-form-section{float:none; width:100%; height:auto;
+                .input-row .input-cont{margin-right:0px; display:block;
+                    input{width:100%;}
+                }
+                button{position:relative; right:0px; bottom:0px; float:right;}
+            }
+            textarea{width:100%;}
+
+            &.share-page{
+                .left{float:none; width:auto;}
+                .right{float:none; width:auto;}
+            }
+
+            #mobile-later{display:block!important;
+                p{background:$light-grey-background; padding:10px; font-size:13px;
+                color:$subhead-grey; @include border-bottom-right-radius(4px); @include border-bottom-left-radius(4px);}
+            }
+            #create-profile{display:none;}
+
+
+        }
+
+        .below-form{display:none;}
+
+    }
+
+
+}
+

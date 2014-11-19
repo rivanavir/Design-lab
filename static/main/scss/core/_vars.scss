@@ -1,0 +1,68 @@
+/*******
+ Text
+*******/
+$base-font: 'proxima-nova', 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$uppercase-spacing: 0.10em;
+
+$top-bar-height: 65px;
+$title-bar-height: 40px;
+
+%circle{border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%;}
+
+/********
+Colors
+********/
+$off-white: #f2f2f2;
+$charcoal: #333333;
+
+$orange: #f15b2a;
+$dark-orange: #cc491e;
+$burnt-orange:#d5622c;
+
+$light-grey: #b5b7ba;
+$very-light-grey: #e8e8e8;
+$text_grey:#72777a;
+$dark-grey:#a0a5a7;
+$charcoal-grey:#252525;
+
+$background-blue:#233640;
+$blue: #4e687e;
+$light-blue:#718698;
+$dark-blue: #3c5061;
+$midnight-blue:#262f34;
+$darkest-blue:#1a1f22;
+$footer-text-color:#393e41;
+
+$progress-green: #77B93B;
+
+$facebook-blue: #39579a;
+$twitter-blue: #3897ff;
+
+
+/* new colors */
+$subhead-grey: #4b5b64;
+$dark-text: #262f34;
+$bright-blue:#42A5DC;
+
+$light-grey-border:#ebebeb;
+$light-grey-background:#fafafa;
+
+
+/* Responsive breakpoints */
+/* We shouldn't need to use all of these on every page, but good to have
+   them defined in one place and stick to using only these */
+$break-x-small: 560px;
+$break-small: 768px;
+
+$break-medium: 1040px;
+$break-x-medium: 1200px;
+
+$break-large: 1400px;
+$break-x-large: 1600px;
+
+
+%loader{-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; height: 18px; width: 18px;
+   -webkit-animation: pulsate 4s ease-in-out; -webkit-animation-iteration-count: infinite;
+   animation: pulsate 4s ease-in-out; animation-iteration-count: infinite;
+   -moz-animation: pulsate 4s ease-in-out; -moz-animation-iteration-count: infinite;
+   opacity: 0.0; margin: 0 auto; position:absolute; left:50%; top:50%; z-index:100001; margin-left:-9px;}

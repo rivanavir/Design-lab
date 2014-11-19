@@ -1,0 +1,28 @@
+@import 'core/vars';
+@import 'core/reset';
+@import 'core/utils';
+@import 'core/typography';
+@import 'core/layout';
+@import 'core/animations';
+@import 'core/ui';
+
+/* Needed for ng-cloak. We may not need this if we put angular.js in the <head> of the page at some point */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none;
+}
+
+body {margin: 0; font-family: $base-font; font-style: normal; font-weight: 400; font-size: 13px;
+    line-height: 18px; color: $charcoal; background-color: $off-white; overflow-x:hidden;}
+
+a {color: $orange; text-decoration: none;}
+
+hr {border: 0; border-top: 2px solid #dddddd; border-bottom: 1px solid #ffffff;}
+
+ul {list-style: disc;}
+ol {list-style: decimal;}
+ul, ol {padding: 0; margin: 0;
+    &.unstyled {list-style: none;}
+}
+img {max-width: 100%;}
+
+textarea, input{border:1px solid #ddd; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}

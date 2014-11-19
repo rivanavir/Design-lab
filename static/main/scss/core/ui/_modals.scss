@@ -1,0 +1,17 @@
+%modal {@extend %fadeInUp; position:fixed; left:50%; top:50%; z-index:1001;}
+#modal-shadow {position:fixed; background:rgba(0,0,0,0.8); top:0; left:0; bottom:0; right:0; z-index:1000;}
+
+/* Specific modal styles used in multiple places */
+#crop-modal {@extend %modal; width: 750px; margin-left: -375px; top: 100px; background: #fff; position: absolute;
+    .top {padding:20px; border-bottom:1px solid $light-grey; background:#f2f3f4;
+        h1 {@include uppercase-text; margin:0px; font-size:14px;}
+    }
+    .jcrop-holder {margin:20px auto;}
+    .buttons-bottom {padding:20px; border-top:1px solid darken($light-grey, 5%);
+        .crop-button {@extend %button; display: inline-block; font-size: 14px; padding: 0 20px; margin-right: 10px;}
+        .cancel-button {@extend .crop-button; background-color: $charcoal; margin-right: 0;}
+    }
+}
+#crop-csv {position: absolute; opacity: 0; z-index:-1;}
+
+#slot-modal {@extend %modal; width: 400px; height: 450px; margin-left: -200px; margin-top: -225px; background: #fff;}

@@ -1,0 +1,112 @@
+body#mentors-roster-body{background:#fff;}
+
+#mentor-roster {
+    .container{width:860px; margin:auto; position:relative;}
+    p.half-width{width:50%; margin:auto;}
+    h1{font-size:30px;}
+
+    .header{background:#262F34; height:400px; width:100%; position:relative;
+        background-image:dl-url('mentors', 'images/mentor-roster/top-bg.jpg'); background-repeat:repeat;
+        .homepage-nav{ padding:50px 0px;
+            ul{list-style:none;}
+            li{float:left; margin-right:25px; color:#fff; @extend %uppercase_text; @extend %smooth_text; font-weight:600;
+                font-size:14px;
+                img{width:130px; margin-right:10px; padding-top:1px;}
+                a{color:#fff;}
+                button {@extend %smooth_text; border: none; background: none; outline: none; text-transform: uppercase; letter-spacing: 0.1em; padding: 0;}
+            }
+            .sign-up-link{@extend %button; position:absolute; right:0px; top:40px; @extend %smooth_text; height:32px; line-height:32px; outline: none;
+                font-size:14px; text-transform:none; letter-spacing:0em;}
+        }
+        .content{text-align:center; margin-top:50px;
+            h1{color:#fff; @extend %smooth_text; font-size:50px; font-weight:300; margin-bottom:10px;}
+            p{color:#fff; @extend %smooth_text; font-size:16px; width:480px; line-height:1.2; margin:auto;}
+        }
+
+
+        .little-dude-image{position:absolute; left:50%; bottom:-137px; width:auto; z-index:101; width:120px; margin-left:-60px; height:auto;}
+    }
+
+    .mentor-list-section{ background:$light-grey-background; padding:40px 0px; background-repeat:repeat; background-size:100%; 
+        background-position-x:-150px; background-image:dl-url('main', 'images/homepage_v2/background3.png');
+        
+        .mentor-list-inner{width:960px; margin:auto;}
+        .mentor-block{display:inline-block; padding:30px; margin:0px 20px 30px 0px; text-align:center;
+            background:#fff; @include border-radius(4px); position:relative;
+            img.profile{height:150px; width:150px; @include border-radius(50%);}
+            img.logo{height:45px; width:45px; position:absolute; top:135px; left:130px;}
+            h3{color:#000; @extend %smooth_text; @extend %uppercase_text; margin:20px 0px 10px; line-height:1; font-size:15px;
+                letter-spacing:0.15em;
+                @include transition(color, 0.2s, ease-in);
+            }
+            p{@extend %smooth_text; font-size:14px; color:$text-grey; margin:0px auto; line-height:1;}
+            &:nth-child(4n){margin-right:0px;}
+            a{position:absolute; width:100%; height:100%; top:0; left:0;}
+        }
+
+        .join-the-cause{ text-align:center; margin:40px 0px;
+            h1{font-weight:400; @extend %smooth_text; font-size:20px;}
+            .join-button{@extend %button; background:$subhead-grey; display:inline-block; font-size:17px; margin-top:20px;
+                height:40px; line-height:41px; padding:0px 20px;
+                &:hover{background:$charcoal-grey;}
+            }
+        }
+
+    }
+
+}
+
+
+
+/******************************
+RESPONSIVE STYLES
+*******************************/
+
+
+@media screen and (max-width: $break-medium){
+    #mentor-roster{
+        .container{width:auto; padding:0px 20px!important;}
+
+        .header{
+            .homepage-nav .sign-up-link{display:none;}
+        }
+
+        .how-it-works-section{ padding:100px 15px;
+            .how-it-works-inner{width:auto;}
+            section .how-block{display:block; width:100%; text-align:center;
+                &.center{margin-bottom:30px;}
+                &.right{text-align:center;}
+            }
+        }
+
+
+        .footer-section{ padding-top:0px;
+            .info{width:auto; padding:10px;}
+            .info-section:last-child{display: none;}
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: $break-x-small){
+    #mentor-roster{
+        .container{width:auto; padding:0px!important;}
+        p.half-width{width:auto; }
+
+        .header{ height:auto; padding:20px 0px;
+            .homepage-nav{ padding:30px 0px;
+                li{float:none;}
+                li a, li.link{display:none;}
+                .sign-up-link{display:none;}
+            }
+            .content{margin-top:0px; padding:40px 20px 70px;
+                p{width:auto; margin-top:10px;}
+            }
+        }
+
+    }
+
+}
+

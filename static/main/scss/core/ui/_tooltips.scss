@@ -1,0 +1,9 @@
+.ui-tooltip.dl {background:rgba(0,0,0,0.8); color:#fff; border:none; font-family:'proxima-nova'; box-shadow:none;
+    @include border-radius(4px); @include smooth_text; box-shadow: none;
+
+    &::after {content:''; position:absolute; border-style: solid; display: block; width: 0;
+        border-color: rgba(0,0,0,0.8) transparent; left: 50%; margin-left: -10px;}
+
+    &.top-arrow::after {border-width: 0 10px 10px; top: -10px;}
+    &.bottom-arrow::after {border-width: 10px 10px 0; bottom: -10px;}
+}

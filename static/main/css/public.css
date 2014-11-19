@@ -1,0 +1,1352 @@
+/* Root SASS file for public pages e.g. homepage, premium LP, mentor lead page, etc.. */
+/******* Text
+*******/
+#enroll .enroll-form .left-photo-section .profile-pic-preview, #enroll .enroll-form .left-photo-section .default-profile-pic, .mentor-spine .dot, .mentor-info .image-div, #enroll #steps-bar .step .step-num { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+
+/********
+Colors
+********/
+/* new colors */
+/* Responsive breakpoints */
+/* We shouldn't need to use all of these on every page, but good to have them defined in one place and stick to using only these */
+/* Resets from HTML5 boilerplate */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+body { margin: 0; }
+
+/* HTML5 display definitions
+========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+/** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+[hidden], template { display: none; }
+
+/* Links
+========================================================================== */
+/** Remove the gray background color from active links in IE 10. */
+a { background: transparent; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* Text-level semantics
+========================================================================== */
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari and Chrome. */
+dfn { font-style: italic; }
+
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* Embedded content
+========================================================================== */
+/** Remove border when inside `a` element in IE 8/9/10. */
+img { border: 0; }
+
+/** Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content
+========================================================================== */
+/** Address margin not present in IE 8/9 and Safari. */
+figure { margin: 1em 40px; }
+
+/** Address differences between Firefox and other browsers. */
+hr { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+/** Contain overflow in all browsers. */
+pre { overflow: auto; }
+
+/** Address odd `em`-unit font size rendering in all browsers. */
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+/* Forms
+========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
+input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea { overflow: auto; }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup { font-weight: bold; }
+
+/* Tables
+========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/* Returns the base static URL given an app name */
+/* Helper function for creating absolute urls to images, fonts, etc... from within CSS */
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: bold; text-rendering: optimizelegibility; }
+
+h1 { font-size: 30px; line-height: 1.4; }
+
+h2 { font-size: 24px; line-height: 1.4; }
+
+h3 { font-size: 18px; line-height: 1.4; }
+
+h4 { font-size: 16px; line-height: 1.5; }
+
+h5 { font-size: 12px; }
+
+h6 { font-size: 11px; }
+
+h5, h6 { line-height: 18px; }
+
+p { margin: 0; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+.premium-page-intro h1, .mentor-info h2, .mentor-signup h2, .mentor-signup .lead-submitted, .mentor-info h1, .mentor-signup h1, .mentor-signup label, .mentor-page-intro.mentor .box h1, .mentor-page-intro.mentor .box h2, #homepage .header .homepage-nav li, #homepage .mentors-section .mentor-block h3, .footer-section .info .info-section li a, .footer-section h3, #course-description .course-content .at-a-glance h1, #course-description .course-content .inner-left .syllabus-section .week h2, #course-description .course-content .inner-left section.faq h3, #course-description .course-content .inner-right .enroll-box h3, #course-description .course-content .inner-right .signup-box h3, #mentor-register .content section h1, #mentor .mentor-header .works-at h4, #mentor .mentor-content h2, #mentor .mentor-content .mentor-work .image-container a, #mentor .mentor-footer h2, #mentor-roster .header .homepage-nav li, #mentor-roster .mentor-list-section .mentor-block h3 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; }
+
+.grey-button, #homepage .mentors-section .see-mentors-button, #homepage .courses-section .course-div .description a.coming-soon-button, #course-description .course-header .inner .what-is, #course-description .course-content .inner-right .signup-box button, #mentor .mentor-header .what-is, .white-button, .page404-container .content .back-button, .button, #crop-modal .buttons-bottom .crop-button, #crop-modal .buttons-bottom .cancel-button, #enroll .enroll-form button, #enroll .enroll-form a.button, #homepage .header .homepage-nav .sign-up-link, #homepage .courses-section .course-div .description a, .enroll-button, .bottom-enroll-button, #mentor-register .content .submit-button, #mentor .mentor-footer .learn-with-mentor-button, #mentor-roster .header .homepage-nav .sign-up-link, #mentor-roster .mentor-list-section .join-the-cause .join-button, .login-form .sign-in-button, .premium-page-intro h1, .mentor-info h2, .mentor-signup h2, .mentor-signup .lead-submitted, .mentor-info h1, .mentor-signup h1, .mentor-signup label, .mentor-page-intro.mentor .box h1, .mentor-page-intro.mentor .box h2, #enroll .enroll-form .top-section h2, #homepage .header .homepage-nav li, #homepage .header .homepage-nav li button, #homepage .header .content h1, #homepage .header .content p, #homepage .how-it-works-section section h1, #homepage .how-it-works-section section p, #homepage .how-it-works-section section .cta-link, #homepage .mentors-section h1, #homepage .mentors-section p, #homepage .mentors-section .mentor-block h3, #homepage .mentors-section .mentor-block p, #homepage .more-mentors-section h1, #homepage .courses-section h1, #homepage .courses-section p, #homepage .past-students-section h1, #homepage .past-students-section p, #homepage .past-students-section .quote-box p, #homepage .past-students-section .quote-box h3, .footer-section .signup h1, .footer-section .signup .button, .footer-section .info .info-section li a, .footer-section h3, #course-description .course-header .inner .call-to-action p, #course-description .course-header .inner h1, #course-description .course-header .inner p, #course-description .course-content .at-a-glance h1, #course-description .course-content .at-a-glance h2, #course-description .course-content .inner-left section h1, #course-description .course-content .inner-left .syllabus-section .content p, #course-description .course-content .inner-left .who-its-for h2, #course-description .course-content .inner-left .who-its-for-explainer p, #course-description .course-content .inner-left section.faq h3, #course-description .course-content .inner-left section.faq p, #course-description .course-content .inner-left section.faq li, #course-description .course-content .inner-right .enroll-box h1, #course-description .course-content .inner-right .enroll-box a.button, #course-description .course-content .inner-right .guarantee p, #course-description .course-content .inner-right .signup-box h3, .mentor-signup .share p, #mentor-register .header h1, #mentor-register .content section h1, #mentor-register .content section p, #mentor-register .content section label, #mentor-register .content section .upload-button-cont button, .how-it-works-content h1, .how-it-works-content h2, .how-it-works-content p, #mentor .mentor-header .is-a-mentor, #mentor .mentor-header h1, #mentor .mentor-header h3, #mentor .mentor-header p, #mentor .mentor-content .mentor-work .image-container a, #mentor .mentor-content .mentor-student h3, #mentor .mentor-content .mentor-student p, #mentor .mentor-content .testimonial h3, #mentor .mentor-content .testimonial p, #mentor .mentor-footer h1.announcement, #mentor .mentor-footer h3, #mentor .mentor-footer h2, #mentor .mentor-footer .shuffle-button, #mentor-roster .header .homepage-nav li, #mentor-roster .header .homepage-nav li button, #mentor-roster .header .content h1, #mentor-roster .header .content p, #mentor-roster .mentor-list-section .mentor-block h3, #mentor-roster .mentor-list-section .mentor-block p, #mentor-roster .mentor-list-section .join-the-cause h1, .login-container p.footer, .login-container .content .heading h1, .login-form .errorlist li, .lost-password .errorlist li, .forgot-psw-text, #enroll .enroll-form.share-page .left a.twitter-button, #enroll .enroll-form.share-page .left .facebook-button, #enroll .enroll-form.share-page .right h2, #enroll .enroll-form label, #enroll .enroll-form .right-benefits-section .benefit-row .benefit-copy h3, #enroll .enroll-form .left-photo-section .file-button-cont button, #enroll .enroll-form .top-section h3.bottom-right span, #enroll .enroll-form .billing-form label.fine-print, #enroll .enroll-form.success-page h3, #enroll .enroll-form.share-page h3, #enroll .enroll-form.share-page .left a.twitter-button, #enroll .enroll-form.share-page .left .facebook-button, #enroll .enroll-form.share-page .right p, #enroll .below-form .testimonial h3, #enroll .below-form .testimonial .student .info label, #enroll .below-form.money-back h3 { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; }
+
+#homepage .how-it-works-section section .cta-link, .footer-section .info .info-section li a, .mentor-signup .share i { transition: color 0.2s ease; -webkit-transition: color 0.2s ease; -moz-transition: color 0.2s ease; -o-transition: color 0.2s ease; }
+
+/* Any common layout or container styles should be reused from here */
+.premium-slidedown-topbar, .premium-static-topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 10; margin: 0 auto; width: 100%; }
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: collapse; }
+
+[class*='col-'] { padding: 0 10px; }
+
+.container { padding: 0px; text-align: center; }
+.container .row { max-width: 100%; width: 1108px; text-align: center; margin: 80px auto 0px; }
+.container .columns { float: left; margin: 0; position: relative; }
+.container .col-two { width: 50%; text-align: center; }
+.container .col-three { width: 33.33333%; }
+.container .col-four { width: 25%; }
+.container .col-twothird { width: 60%; float: right; }
+
+.body-container { padding-top: 0px; -webkit-animation: none; opacity: 1; }
+
+.clearfix { clear: both; *zoom: 1; }
+.clearfix:before, .clearfix .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+/* Animation util mixins */
+/* Weird Safari thing */
+/* http://stackoverflow.com/questions/3461441/prevent-flicker-on-webkit-transition-of-webkit-transform */
+/* Create specific animations */
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-webkit-keyframes fadeInUp { 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-ms-keyframes fadeInUp { 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@keyframes fadeInUp { 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-webkit-keyframes fadeInUpBig { 0% { visibility: visible; -webkit-transform: translateY(2000px); -ms-transform: translateY(2000px); transform: translateY(2000px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-ms-keyframes fadeInUpBig { 0% { visibility: visible; -webkit-transform: translateY(2000px); -ms-transform: translateY(2000px); transform: translateY(2000px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@keyframes fadeInUpBig { 0% { visibility: visible; -webkit-transform: translateY(2000px); -ms-transform: translateY(2000px); transform: translateY(2000px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-webkit-keyframes fadeInDown { 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-ms-keyframes fadeInDown { 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@keyframes fadeInDown { 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-webkit-keyframes shake { 0%, 100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -ms-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -ms-transform: translateX(10px); transform: translateX(10px); } }
+@-ms-keyframes shake { 0%, 100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -ms-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -ms-transform: translateX(10px); transform: translateX(10px); } }
+@keyframes shake { 0%, 100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -ms-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -ms-transform: translateX(10px); transform: translateX(10px); } }
+@-webkit-keyframes swing { 20% { -webkit-transform: rotate(15deg); -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  40% { -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); }
+  60% { -webkit-transform: rotate(5deg); -ms-transform: rotate(5deg); transform: rotate(5deg); }
+  80% { -webkit-transform: rotate(-5deg); -ms-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+@-ms-keyframes swing { 20% { -webkit-transform: rotate(15deg); -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  40% { -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); }
+  60% { -webkit-transform: rotate(5deg); -ms-transform: rotate(5deg); transform: rotate(5deg); }
+  80% { -webkit-transform: rotate(-5deg); -ms-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+@keyframes swing { 20% { -webkit-transform: rotate(15deg); -ms-transform: rotate(15deg); transform: rotate(15deg); }
+  40% { -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); }
+  60% { -webkit-transform: rotate(5deg); -ms-transform: rotate(5deg); transform: rotate(5deg); }
+  80% { -webkit-transform: rotate(-5deg); -ms-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } }
+/* Placeholder selectors for animations */
+#enroll .enroll-form, #enroll .below-form { -webkit-animation: fadeIn 1s; -ms-animation: fadeIn 1s; animation: fadeIn 1s; }
+
+#crop-modal, #slot-modal, #enroll .enroll-form .billing-form .cc-image .visa-logo, #enroll .enroll-form .billing-form .cc-image .amex-logo, #enroll .enroll-form .billing-form .cc-image .mastercard-logo { -webkit-animation: fadeInUp 1s; -ms-animation: fadeInUp 1s; animation: fadeInUp 1s; }
+
+#enroll .enroll-form .billing-form .cc-image .cc-number-preview span { -webkit-animation: fadeInDown 0.25s; -ms-animation: fadeInDown 0.25s; animation: fadeInDown 0.25s; }
+
+#enroll .enroll-form label.error { -webkit-animation: shake 0.5s; -ms-animation: shake 0.5s; animation: shake 0.5s; }
+
+#homepage .award-animation-cont.start-animation #award { -webkit-animation: swing 1s; -ms-animation: swing 1s; animation: swing 1s; }
+
+/* Placeholder selectors for transitions */
+.premium-slidedown-topbar #cta-button { transition: background-color 0.2s ease; -moz-transition: background-color 0.2s ease; -webkit-transition: background-color 0.2s ease; -o-transition: background-color 0.2s ease ease; }
+
+.premium-slidedown-topbar dl.sub-nav dd a, .premium-static-topbar dl.sub-nav dd a { transition: color 0.2s ease; -moz-transition: color 0.2s ease; -webkit-transition: color 0.2s ease; -o-transition: color 0.2s ease ease; }
+
+/* Aggregate imports for UI component style sheets */
+.grey-button, #homepage .mentors-section .see-mentors-button, #homepage .courses-section .course-div .description a.coming-soon-button, #course-description .course-header .inner .what-is, #course-description .course-content .inner-right .signup-box button, #mentor .mentor-header .what-is, .white-button, .page404-container .content .back-button, .button, #crop-modal .buttons-bottom .crop-button, #crop-modal .buttons-bottom .cancel-button, #enroll .enroll-form button, #enroll .enroll-form a.button, #homepage .header .homepage-nav .sign-up-link, #homepage .courses-section .course-div .description a, .enroll-button, .bottom-enroll-button, #mentor-register .content .submit-button, #mentor .mentor-footer .learn-with-mentor-button, #mentor-roster .header .homepage-nav .sign-up-link, #mentor-roster .mentor-list-section .join-the-cause .join-button, .login-form .sign-in-button { transition: background-color 0.2s ease; -moz-transition: background-color 0.2s ease; -webkit-transition: background-color 0.2s ease; -o-transition: background-color 0.2s ease ease; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; background-color: #f15b2a; color: #fff; border: none; height: 32px; line-height: 31px; font-weight: 600; padding: 0px 15px; transition: background-color 0.2s ease; -webkit-transition: background-color 0.2s ease; -moz-transition: background-color 0.2s ease; -o-transition: background-color 0.2s ease; }
+.grey-button:hover, #homepage .mentors-section .see-mentors-button:hover, #course-description .course-header .inner .what-is:hover, #course-description .course-content .inner-right .signup-box button:hover, #mentor .mentor-header .what-is:hover, .white-button:hover, .page404-container .content .back-button:hover, .button:hover, #crop-modal .buttons-bottom .crop-button:hover, #crop-modal .buttons-bottom .cancel-button:hover, #enroll .enroll-form button:hover, #enroll .enroll-form a.button:hover, #homepage .header .homepage-nav .sign-up-link:hover, #homepage .courses-section .course-div .description a:hover, .enroll-button:hover, .bottom-enroll-button:hover, #mentor-register .content .submit-button:hover, #mentor .mentor-footer .learn-with-mentor-button:hover, #mentor-roster .header .homepage-nav .sign-up-link:hover, #mentor-roster .mentor-list-section .join-the-cause .join-button:hover, .login-form .sign-in-button:hover { background-color: #cc491e; }
+.loading.grey-button, #homepage .mentors-section .loading.see-mentors-button, #course-description .course-header .inner .loading.what-is, #course-description .course-content .inner-right .signup-box button.loading, #mentor .mentor-header .loading.what-is, .loading.white-button, .page404-container .content .loading.back-button, .loading.button, #crop-modal .buttons-bottom .loading.crop-button, #crop-modal .buttons-bottom .loading.cancel-button, #enroll .enroll-form button.loading, #enroll .enroll-form a.loading.button, #homepage .header .homepage-nav .loading.sign-up-link, #homepage .courses-section .course-div .description a.loading, .loading.enroll-button, .loading.bottom-enroll-button, #mentor-register .content .loading.submit-button, #mentor .mentor-footer .loading.learn-with-mentor-button, #mentor-roster .header .homepage-nav .loading.sign-up-link, #mentor-roster .mentor-list-section .join-the-cause .loading.join-button, .login-form .loading.sign-in-button, .disabled.grey-button, #homepage .mentors-section .disabled.see-mentors-button, #course-description .course-header .inner .disabled.what-is, #course-description .course-content .inner-right .signup-box button.disabled, #mentor .mentor-header .disabled.what-is, .disabled.white-button, .page404-container .content .disabled.back-button, .disabled.button, #crop-modal .buttons-bottom .disabled.crop-button, #crop-modal .buttons-bottom .disabled.cancel-button, #enroll .enroll-form button.disabled, #enroll .enroll-form a.disabled.button, #homepage .header .homepage-nav .disabled.sign-up-link, #homepage .courses-section .course-div .description a.disabled, .disabled.enroll-button, .disabled.bottom-enroll-button, #mentor-register .content .disabled.submit-button, #mentor .mentor-footer .disabled.learn-with-mentor-button, #mentor-roster .header .homepage-nav .disabled.sign-up-link, #mentor-roster .mentor-list-section .join-the-cause .disabled.join-button, .login-form .disabled.sign-in-button { pointer-events: none; opacity: 0.5; }
+
+.grey-button, #homepage .mentors-section .see-mentors-button, #homepage .courses-section .course-div .description a.coming-soon-button, #course-description .course-header .inner .what-is, #course-description .course-content .inner-right .signup-box button, #mentor .mentor-header .what-is { color: #a2a2a2; background: none; border: 2px solid #a2a2a2; }
+.grey-button:hover, #homepage .mentors-section .see-mentors-button:hover, #homepage .courses-section .course-div .description a.coming-soon-button:hover, #course-description .course-header .inner .what-is:hover, #course-description .course-content .inner-right .signup-box button:hover, #mentor .mentor-header .what-is:hover { background-color: #eee; }
+
+.white-button, .page404-container .content .back-button { color: #fff; background: none; border: 2px solid #fff; }
+.white-button:hover, .page404-container .content .back-button:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+#mentor-register .content section .upload-button-cont { position: relative; overflow: hidden; }
+#mentor-register .content section .upload-button-cont input[type="file"] { position: absolute; left: 0; top: -25px; bottom: 0; right: 0; z-index: 2; height: 100px; cursor: pointer; opacity: 0; }
+
+#crop-modal, #slot-modal { position: fixed; left: 50%; top: 50%; z-index: 1001; }
+
+#modal-shadow { position: fixed; background: rgba(0, 0, 0, 0.8); top: 0; left: 0; bottom: 0; right: 0; z-index: 1000; }
+
+/* Specific modal styles used in multiple places */
+#crop-modal { width: 750px; margin-left: -375px; top: 100px; background: #fff; position: absolute; }
+#crop-modal .top { padding: 20px; border-bottom: 1px solid #b5b7ba; background: #f2f3f4; }
+#crop-modal .top h1 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; margin: 0px; font-size: 14px; }
+#crop-modal .jcrop-holder { margin: 20px auto; }
+#crop-modal .buttons-bottom { padding: 20px; border-top: 1px solid #a8aaae; }
+#crop-modal .buttons-bottom .crop-button, #crop-modal .buttons-bottom .cancel-button { display: inline-block; font-size: 14px; padding: 0 20px; margin-right: 10px; }
+#crop-modal .buttons-bottom .cancel-button { background-color: #333333; margin-right: 0; }
+
+#crop-csv { position: absolute; opacity: 0; z-index: -1; }
+
+#slot-modal { width: 400px; height: 450px; margin-left: -200px; margin-top: -225px; background: #fff; }
+
+.ui-tooltip.dl { background: rgba(0, 0, 0, 0.8); color: #fff; border: none; font-family: 'proxima-nova'; -webkit-box-shadow: none; box-shadow: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-box-shadow: none; box-shadow: none; }
+.ui-tooltip.dl::after { content: ''; position: absolute; border-style: solid; display: block; width: 0; border-color: rgba(0, 0, 0, 0.8) transparent; left: 50%; margin-left: -10px; }
+.ui-tooltip.dl.top-arrow::after { border-width: 0 10px 10px; top: -10px; }
+.ui-tooltip.dl.bottom-arrow::after { border-width: 10px 10px 0; bottom: -10px; }
+
+/* Needed for ng-cloak. We may not need this if we put angular.js in the <head> of the page at some point */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none; }
+
+body { margin: 0; font-family: "proxima-nova", "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; font-size: 13px; line-height: 18px; color: #333333; background-color: #f2f2f2; overflow-x: hidden; }
+
+a { color: #f15b2a; text-decoration: none; }
+
+hr { border: 0; border-top: 2px solid #dddddd; border-bottom: 1px solid #ffffff; }
+
+ul { list-style: disc; }
+
+ol { list-style: decimal; }
+
+ul, ol { padding: 0; margin: 0; }
+ul.unstyled, ol.unstyled { list-style: none; }
+
+img { max-width: 100%; }
+
+textarea, input { border: 1px solid #ddd; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+/* For styles common to multiple public pages */
+/* This is being used in both the mentor lead page & premium LP. */
+.premium-page-intro h1, .mentor-info h2, .mentor-signup h2, .mentor-signup .lead-submitted, .mentor-info h1, .mentor-signup h1, .mentor-signup label, .mentor-page-intro.mentor .box h1, .mentor-page-intro.mentor .box h2 { font-size: 48px; line-height: 1.6; font-weight: 800; }
+
+#enroll .enroll-form input, #enroll .enroll-form textarea, #mentor-register .content section input:not([type="file"]), #mentor-register .content section textarea, .login-form input[type=text], .login-form input[type=password], .lost-password input[type=text], .lost-password input[type=password] { display: block; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; font-size: 14px; padding: 12px; margin-bottom: 12px; border: 2px solid #e8e8e8; }
+#enroll .enroll-form input:focus, #enroll .enroll-form textarea:focus, #mentor-register .content section input:focus:not([type="file"]), #mentor-register .content section textarea:focus, .login-form input[type=text]:focus, .login-form input[type=password]:focus, .lost-password input[type=text]:focus, .lost-password input[type=password]:focus { outline: none; border-color: #f15b2a; }
+
+/* For enroll page & mentor registration & eventually free-site register? */
+#enroll .enroll-form { border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; width: 760px; height: 460px; margin: auto; background: #fff; -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); position: absolute; left: 50%; margin-left: -380px; }
+#enroll .enroll-form button, #enroll .enroll-form a.button { width: 125px; font-size: 12px; height: 32px; line-height: 31px; font-weight: 800; letter-spacing: 2.2; }
+#enroll .enroll-form label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 14px; }
+#enroll .enroll-form label.error { color: #f15b2a; }
+#enroll .enroll-form input { height: 45px; }
+#enroll .enroll-form textarea { height: 45px; width: 438px; resize: none; }
+#enroll .enroll-form .top-section { border-bottom: 1.5px solid #e8e8e8; padding: 30px; }
+#enroll .enroll-form .top-section span.step { color: #b5b7ba; display: none; }
+#enroll .enroll-form .top-section h2 { line-height: normal; letter-spacing: 0; font-size: 18px; font-weight: 800; }
+#enroll .enroll-form .top-section h3 { margin-top: 7px; }
+#enroll .enroll-form .left-form-section, #enroll .enroll-form .right-form-section, #enroll .enroll-form .right-benefits-section, #enroll .enroll-form .left-photo-section, #enroll .enroll-form .left-image-section { display: inline-block; height: 350px; }
+#enroll .enroll-form .left-form-section, #enroll .enroll-form .right-form-section { width: 500px; padding: 30px; position: relative; }
+#enroll .enroll-form .left-form-section .input-row .input-cont, #enroll .enroll-form .right-form-section .input-row .input-cont { display: inline-block; margin-right: 14px; position: relative; }
+#enroll .enroll-form .left-form-section .input-row .input-cont:last-child, #enroll .enroll-form .right-form-section .input-row .input-cont:last-child { margin-right: 0; }
+#enroll .enroll-form .left-form-section .input-row .input-cont input.half-width, #enroll .enroll-form .right-form-section .input-row .input-cont input.half-width { width: 210px; }
+#enroll .enroll-form .left-form-section button, #enroll .enroll-form .right-form-section button { -webkit-backface-visibility: hidden; position: absolute; right: 31px; bottom: 23px; }
+#enroll .enroll-form .left-form-section { border-right: 1.5px solid #e8e8e8; }
+#enroll .enroll-form .right-form-section { border-left: 1.5px solid #e8e8e8; float: right; }
+#enroll .enroll-form .right-form-section.no-border { border: none; }
+#enroll .enroll-form .right-benefits-section { width: 250px; float: right; }
+#enroll .enroll-form .right-benefits-section .header-section { padding: 15px; border-bottom: 1.5px solid #e8e8e8; width: 260px; text-align: center; margin-left: -10px; font-weight: 600; font-size: 14px; }
+#enroll .enroll-form .right-benefits-section .benefit-row { padding: 21px 9px 0 8px; overflow: hidden; }
+#enroll .enroll-form .right-benefits-section .benefit-row .skype-icon, #enroll .enroll-form .right-benefits-section .benefit-row .feedback-icon, #enroll .enroll-form .right-benefits-section .benefit-row .projects-icon { display: inline-block; width: 50px; height: 50px; -webkit-background-size: 100%; background-size: 100%; }
+#enroll .enroll-form .right-benefits-section .benefit-row .skype-icon { background-image: url(../images/skype-icon@2x.png); }
+#enroll .enroll-form .right-benefits-section .benefit-row .feedback-icon { background-image: url(../images/feedback-icon@2x.png); }
+#enroll .enroll-form .right-benefits-section .benefit-row .projects-icon { background-image: url(../images/projects-icon@2x.png); }
+#enroll .enroll-form .right-benefits-section .benefit-row .benefit-copy { display: inline-block; float: right; width: 167px; }
+#enroll .enroll-form .right-benefits-section .benefit-row .benefit-copy h3 { font-size: 14px; margin: 0 0 3px 0; font-weight: 700; }
+#enroll .enroll-form .right-benefits-section .benefit-row .benefit-copy p { font-size: 12px; color: #b5b7ba; line-height: 1.3; }
+#enroll .enroll-form .left-photo-section { width: 257px; text-align: center; position: relative; /* Container to overlay an invisbile file input with the upload button */ }
+#enroll .enroll-form .left-photo-section .profile-pic-preview, #enroll .enroll-form .left-photo-section .default-profile-pic { width: 150px; height: 150px; overflow: hidden; margin: 0px auto 20px; position: relative; }
+#enroll .enroll-form .left-photo-section .default-profile-pic { background-image: url(../images/avatar-icon@2x.png); -webkit-background-size: 100%; background-size: 100%; }
+#enroll .enroll-form .left-photo-section label.error { margin-top: 10px; }
+#enroll .enroll-form .left-photo-section .file-button-cont { margin: 0 auto 20px auto; position: relative; width: 150px; height: 35px; overflow: hidden; }
+#enroll .enroll-form .left-photo-section .file-button-cont button { background-color: #b5b7ba; color: #fff; letter-spacing: 0; }
+#enroll .enroll-form .left-photo-section .file-button-cont input { position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: 0; padding: 0; height: auto; opacity: 0; cursor: pointer; }
+#enroll .enroll-form .left-photo-section .photo-tips { padding-top: 15px; border-top: 1.5px solid #e8e8e8; width: 260px; }
+#enroll .enroll-form .left-photo-section .photo-tips h3 { color: #333333; font-weight: 600; margin: 0 0 5px 0; }
+#enroll .enroll-form .left-photo-section .photo-tips h5 { color: #b5b7ba; text-align: left; font-weight: normal; margin-left: 35px; }
+
+body#homepage-body { background: #fff; }
+
+.fade-slow { -webkit-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s; transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s; }
+
+.fade-in.ng-enter { opacity: 0; }
+
+.fade-in.ng-enter-active { opacity: 1; }
+
+.fade-out.ng-leave { opacity: 1; }
+
+.fade-out.ng-leave-active { opacity: 0; }
+
+.hide-out.ng-leave { display: none; }
+
+.hide-out.ng-leave-active { display: none; }
+
+/* Weird Safari issue where using opacity breaks the translateY, so we're using visibility instead -- it's too short a distance to notice a fade anyway */
+@-webkit-keyframes flyInUp { 0% { visibility: visible; -webkit-transform: translateY(475px); -ms-transform: translateY(475px); transform: translateY(475px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-ms-keyframes flyInUp { 0% { visibility: visible; -webkit-transform: translateY(475px); -ms-transform: translateY(475px); transform: translateY(475px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@keyframes flyInUp { 0% { visibility: visible; -webkit-transform: translateY(475px); -ms-transform: translateY(475px); transform: translateY(475px); }
+  100% { visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
+@-webkit-keyframes fadeInAndOut { 0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes fadeInAndOut { 0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes fadeInAndOut { 0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; } }
+#homepage .container { width: 960px; margin: auto; position: relative; }
+#homepage p.half-width { width: 50%; margin: auto; }
+#homepage h1 { font-size: 30px; }
+#homepage .header { background: #262F34; height: 480px; width: 100%; position: relative; background-image: url(../images/homepage_v2/header-bg.jpg); background-repeat: repeat; }
+#homepage .header .homepage-nav { padding: 60px 0px; }
+#homepage .header .homepage-nav ul { list-style: none; }
+#homepage .header .homepage-nav li { float: left; margin-right: 25px; color: #fff; font-weight: 600; font-size: 14px; }
+#homepage .header .homepage-nav li img { width: 130px; margin-right: 10px; padding-top: 1px; }
+#homepage .header .homepage-nav li a { color: #fff; }
+#homepage .header .homepage-nav li button { border: none; background: none; outline: none; text-transform: uppercase; letter-spacing: 0.1em; padding: 0; }
+#homepage .header .homepage-nav .sign-up-link { position: absolute; right: 0px; top: 48px; height: 32px; line-height: 32px; outline: none; font-size: 14px; text-transform: none; letter-spacing: 0em; }
+#homepage .header .content { text-align: left; margin-top: 60px; }
+#homepage .header .content h1 { color: #fff; font-size: 50px; font-weight: 300; }
+#homepage .header .content p { color: #b5b7ba; font-size: 18px; width: 480px; line-height: 1.4; }
+#homepage .header:after { position: absolute; bottom: -50px; width: 100%; height: 50px; content: ""; background-image: url(../images/homepage_v2/wood-border.jpg); background-repeat: repeat; z-index: 100; }
+#homepage .header .header-devices-image { position: absolute; right: 0px; bottom: -180px; width: auto; z-index: 101; width: 320px; height: auto; }
+#homepage .how-it-works-section { background: #fff; padding: 90px 0px; background-image: url(../images/homepage_v2/background3.png); background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; background-position-x: -150px; }
+#homepage .how-it-works-section .how-it-works-inner { width: 860px; margin: auto; }
+#homepage .how-it-works-section section { margin-bottom: 180px; text-align: center; }
+#homepage .how-it-works-section section:last-child { margin-bottom: 80px; }
+#homepage .how-it-works-section section h1 { color: #000; line-height: 1; margin-bottom: 10px; font-weight: 700; }
+#homepage .how-it-works-section section p { color: #4b5b64; font-size: 16px; line-height: 1.3; }
+#homepage .how-it-works-section section .cta-link { color: #000; font-size: 14px; line-height: 1.3; display: inline-block; font-weight: 700; margin: 10 0px; background: none; border: none; outline: none; }
+#homepage .how-it-works-section section .cta-link i { color: #b5b7ba; }
+#homepage .how-it-works-section section .cta-link:hover { color: #4b5b64; }
+#homepage .how-it-works-section section svg#window { width: 300px; margin: 50px auto 0px; display: block; }
+#homepage .how-it-works-section section svg#guy-talking { width: 125px; height: 85px; margin-right: 20px; margin-bottom: 50px; }
+#homepage .how-it-works-section section svg#guy-idea { width: 130px; height: 150px; margin-left: 10px; margin-bottom: 50px; }
+#homepage .how-it-works-section section .mentor-animation-cont { margin-top: 30px; }
+#homepage .how-it-works-section section .mentor-animation-cont img { width: 260px; }
+#homepage .how-it-works-section section .how-block { display: inline-block; width: 50%; margin: 0px; text-align: left; vertical-align: middle; }
+#homepage .how-it-works-section section .how-block.center { text-align: center; }
+#homepage .how-it-works-section section .how-block.right { text-align: right; }
+#homepage .how-it-works-section section .award-cont { display: inline-block; position: relative; margin-top: 30px; }
+#homepage .how-it-works-section section .award-cont img { width: 260px; }
+#homepage .how-it-works-section section .award-cont svg { position: absolute; bottom: -29px; right: 24px; }
+#homepage .mentors-section { background: #262F34; padding: 60px 0px; background-image: url(../images/homepage_v2/background2.jpg); background-repeat: repeat; }
+#homepage .mentors-section h1 { color: #fff; margin-bottom: 15px; font-weight: 700; }
+#homepage .mentors-section p { color: #eee; font-weight: 400; font-size: 18px; line-height: 1.3; width: 60%; margin: 0px auto 60px; }
+#homepage .mentors-section .mentor-block { display: inline-block; width: 170px; margin: 0px 0px 30px; text-align: center; margin-right: 50px; }
+#homepage .mentors-section .mentor-block img { height: 150px; width: 150px; }
+#homepage .mentors-section .mentor-block h3 { color: #fff; margin: 20px 0px 10px; line-height: 1; font-size: 15px; transition: color 0.2s ease-in; -moz-transition: color 0.2s ease-in; -webkit-transition: color 0.2s ease-in; -o-transition: color 0.2s ease-in ease-in; }
+#homepage .mentors-section .mentor-block p { font-size: 14px; color: #b5b7ba; margin: 0px auto; line-height: 1; }
+#homepage .mentors-section .mentor-block:nth-child(4n) { margin-right: 0px; }
+#homepage .mentors-section .mentor-block:hover h3 { color: #b5b7ba; }
+#homepage .mentors-section .see-mentors-button { display: inline-block; background-image: url(../images/mentor_profile_page/shuffle-button.png); background-repeat: no-repeat; background-position: 15px 7px; padding-left: 45px; text-transform: none; letter-spacing: 0em; line-height: 29px; font-size: 14px; margin-top: 15px; -webkit-background-size: 20px; background-size: 20px; }
+#homepage .mentors-section .see-mentors-button:hover { background-color: rgba(255, 255, 255, 0.2); }
+#homepage .more-mentors-section { background: #fff; padding: 20px 0px 0px; border-bottom: 2px solid #e5e5e5; }
+#homepage .more-mentors-section h1 { color: #b5b7ba; font-size: 16px; margin-bottom: 0px; text-align: center; font-weight: 400; }
+#homepage .more-mentors-section .logo-img { display: inline-block; width: 240px; text-align: center; vertical-align: middle; max-height: 90px; margin-top: 10px; }
+#homepage .more-mentors-section img { height: 60px; }
+#homepage .more-mentors-section img.alt { position: relative; top: -60px; opacity: 0; }
+#homepage .courses-section { background: #2EA8CD; padding: 60px 0px 50px; background-image: url(../images/homepage_v2/background3.png); background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; border-bottom: 3px solid #2997b8; border-top: 3px solid #2997b8; }
+#homepage .courses-section h1 { color: #fff; text-align: left; margin-bottom: 10px; font-weight: 700; }
+#homepage .courses-section p { color: #fff; text-align: left; width: 80%; font-size: 18px; margin: 0px 0px 30px; line-height: 1.3; }
+#homepage .courses-section .course-div-wrapper { width: 300px; margin-right: 30px; display: inline-block; vertical-align: top; }
+#homepage .courses-section .course-div-wrapper.coming-soon { margin-right: 0px; }
+#homepage .courses-section .course-div-wrapper p { width: 100%; text-align: center; }
+#homepage .courses-section .course-div { background: #ccc; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border: 1px solid #fff; width: 300px; margin-top: 20px; position: relative; display: inline-block; height: 410px; overflow: hidden; -webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2); margin-bottom: 15px; }
+#homepage .courses-section .course-div .background { position: absolute; background-position: 0 0px; width: 300px; height: 210px; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
+#homepage .courses-section .course-div .background.fundamentals { background-image: url(../images/homepage_v2/courses/fundamentals_image.png); }
+#homepage .courses-section .course-div .background.ux { background-image: url(../images/homepage_v2/courses/ux_image.jpg); }
+#homepage .courses-section .course-div .description { position: absolute; bottom: 0px; padding: 15px; width: 100%; background: #fff; height: 200px; transition: bottom 0.4s ease; -moz-transition: bottom 0.4s ease; -webkit-transition: bottom 0.4s ease; -o-transition: bottom 0.4s ease ease; }
+#homepage .courses-section .course-div .description .icon { position: absolute; top: -30px; left: 10px; height: 60px; width: 60px; padding: 5px; background: #fff; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+#homepage .courses-section .course-div .description h1 { font-size: 18px; color: #000; margin-bottom: 10px; padding-left: 70px; font-weight: 600; }
+#homepage .courses-section .course-div .description p { color: #4b5b64; width: 100%; padding-left: 20px; text-align: left; font-size: 14px; margin-bottom: 15px; }
+#homepage .courses-section .course-div .description a { height: 32px; line-height: 32px; display: inline-block; letter-spacing: 0.15em; margin-top: 10px; border: 1px solid #f15b2a; }
+#homepage .courses-section .course-div .description a.coming-soon-button { height: 32px; line-height: 32px; pointer-events: none; }
+#homepage .courses-section .course-div:hover { -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6); box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6); }
+#homepage .courses-section .course-div.coming-soon { background: none; border: 1px dashed #fff; -webkit-box-shadow: none; box-shadow: none; opacity: 0.6; pointer-events: none; }
+#homepage .courses-section .course-div.coming-soon h1 { font-size: 20px; padding-left: 0px; margin-top: 180px; text-align: center; }
+#homepage .courses-section .course-div .background-link { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+#homepage .past-students-section { background: #F4F4F4; padding: 60px 0px; text-align: center; border-top: 3px solid #e5e5e5; }
+#homepage .past-students-section h1 { color: #4b5b64; font-weight: 700; margin-bottom: 10px; }
+#homepage .past-students-section p { color: #4b5b64; font-weight: 400; font-size: 18px; line-height: 1.3; }
+#homepage .past-students-section .quote-box { background: #fff; border: 1px solid #ebebeb; padding: 20px; width: 580px; margin: 40px auto 50px; height: 120px; position: relative; }
+#homepage .past-students-section .quote-box p { font-size: 15px; line-height: 1.3; text-align: left; }
+#homepage .past-students-section .quote-box h3 { text-align: right; font-weight: 400; font-size: 14px; position: absolute; right: 15px; bottom: 10px; }
+#homepage .past-students-section .quote-box.quote-1:after { margin-left: -140px; }
+#homepage .past-students-section .quote-box.quote-2:after { margin-left: -30px; }
+#homepage .past-students-section .quote-box.quote-3:after { margin-left: 80px; }
+#homepage .past-students-section .quote-box:after, #homepage .past-students-section .quote-box:before { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+#homepage .past-students-section .quote-box:after { border-color: transparent; border-top-color: #fff; border-width: 20px; margin-left: -20px; }
+#homepage .past-students-section .quote-box:before { border-color: rgba(204, 204, 204, 0); border-width: 13px; margin-left: -13px; }
+#homepage .past-students-section img { height: 90px; width: auto; vertical-align: middle; cursor: pointer; position: relative; display: inline-block; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; margin-right: 20px; }
+#homepage .past-students-section img.selected { height: 120px; width: auto; -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); }
+#homepage .window-animation-cont #page-blocks { visibility: hidden; }
+#homepage .window-animation-cont.start-animation #page-blocks > g { -webkit-animation: flyInUp 1s; -ms-animation: flyInUp 1s; animation: flyInUp 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(1) { -webkit-animation-delay: 0s; animation-delay: 0s; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(4) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(5) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
+#homepage .window-animation-cont.start-animation #page-blocks > g:nth-child(6) { -webkit-animation-delay: 1s; animation-delay: 1s; }
+#homepage .mentor-animation-cont { /* Initially hidden */ }
+#homepage .mentor-animation-cont #waves > path { opacity: 0; }
+#homepage .mentor-animation-cont #bulb { visibility: hidden; }
+#homepage .mentor-animation-cont #rays > rect { opacity: 0; }
+#homepage .mentor-animation-cont.start-animation #waves > path { -webkit-animation: fadeInAndOut 1s; -ms-animation: fadeInAndOut 1s; animation: fadeInAndOut 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+#homepage .mentor-animation-cont.start-animation #waves > path:nth-child(1) { -webkit-animation-delay: 0s; animation-delay: 0s; }
+#homepage .mentor-animation-cont.start-animation #waves > path:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+#homepage .mentor-animation-cont.start-animation #waves > path:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+#homepage .mentor-animation-cont.start-animation #bulb { -webkit-animation: flyInUp 1s; -ms-animation: flyInUp 1s; animation: flyInUp 1s; -webkit-animation-delay: 0.5s; animation-delay: 0.5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+#homepage .mentor-animation-cont.start-animation #rays > rect { -webkit-animation: fadeIn 0.2s; -ms-animation: fadeIn 0.2s; animation: fadeIn 0.2s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(7) { -webkit-animation-delay: 1.2s; animation-delay: 1.2s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(6) { -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(5) { -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(4) { -webkit-animation-delay: 1.4s; animation-delay: 1.4s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(3) { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(2) { -webkit-animation-delay: 1.6s; animation-delay: 1.6s; }
+#homepage .mentor-animation-cont.start-animation #rays > rect:nth-child(1) { -webkit-animation-delay: 1.7s; animation-delay: 1.7s; }
+
+/******************************
+FOOTER SECTION - used on both homepage and course description page
+*******************************/
+.footer-section { background: #262f34; padding: 20px 0px 50px; position: relative; background-image: url(../images/mentor_profile_page/footer-bg@2x.jpg); background-repeat: repeat; }
+.footer-section .signup { background: rgba(0, 0, 0, 0.4); padding: 15px; width: 860px; margin: auto; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }
+.footer-section .signup div { display: inline-block; }
+.footer-section .signup form { margin-bottom: 0px; }
+.footer-section .signup h1 { display: inline-block; font-weight: 400; color: #fff; font-size: 20px !important; margin: 7px 20px 0px 10px; text-align: left; }
+.footer-section .signup input { height: 40px; width: 360; margin-right: 10px; padding-left: 10px; }
+.footer-section .signup .button { display: inline-block; height: 32px; line-height: 32px; text-transform: none; letter-spacing: 0em; font-size: 14px; }
+.footer-section .info { width: 860px; margin: 40px auto; text-align: left; }
+.footer-section .info .info-section { display: inline-block; width: 140px; margin-right: 10px; vertical-align: top; }
+.footer-section .info .info-section img { margin-top: 5px; width: 90px; }
+.footer-section .info .info-section ul { list-style: none; }
+.footer-section .info .info-section li { margin-bottom: 15px; }
+.footer-section .info .info-section li a { color: #b5b7ba; font-weight: 400; }
+.footer-section .info .info-section li a:hover { color: #fff; }
+.footer-section .info .info-section li i { font-size: 16px; margin-right: 5px; }
+.footer-section .info .info-section:last-child { float: right; }
+.footer-section .info .info-section:last-child img { margin: 0; width: auto; }
+.footer-section h3 { color: #b5b7ba; font-weight: 400; font-size: 15px; margin-top: 60px; }
+
+/******************************
+RESPONSIVE STYLES
+*******************************/
+@media screen and (max-width: 1040px) { #homepage .container { width: auto; padding: 0px 20px !important; }
+  #homepage .header .homepage-nav .sign-up-link { display: none; }
+  #homepage .header .header-devices-image { display: none; }
+  #homepage .how-it-works-section { padding: 100px 15px; }
+  #homepage .how-it-works-section .how-it-works-inner { width: auto; }
+  #homepage .how-it-works-section section .how-block { display: block; width: 100%; text-align: center; }
+  #homepage .how-it-works-section section .how-block.center { margin-bottom: 30px; }
+  #homepage .how-it-works-section section .how-block.right { text-align: center; }
+  #homepage .how-it-works-section { text-align: center; }
+  #homepage .how-it-works-section img, #homepage .how-it-works-section svg { display: block; margin-left: auto !important; margin-right: auto !important; }
+  #homepage .how-it-works-section .mentor-animation-cont img { margin: 20px 0; }
+  #homepage .how-it-works-section svg#guy-talking { position: relative; left: 25px; }
+  #homepage .mentors-section .mentor-block { margin-right: 0px; }
+  #homepage .footer-section { padding-top: 0px; }
+  #homepage .footer-section .signup { width: auto; padding: 20px; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; }
+  #homepage .footer-section .signup h1 { margin: 0px 10px 10px; float: none; text-align: center; }
+  #homepage .footer-section .signup input { width: 180px; }
+  #homepage .footer-section .info { width: auto; padding: 10px; }
+  #homepage .footer-section .info-section:last-child { display: none; } }
+@media screen and (max-width: 560px) { #homepage .container { width: auto; padding: 0px !important; }
+  #homepage p.half-width { width: auto; }
+  #homepage .header { height: auto; padding: 20px 0px; }
+  #homepage .header .homepage-nav { padding: 30px 0px; }
+  #homepage .header .homepage-nav li { float: none; }
+  #homepage .header .homepage-nav li a, #homepage .header .homepage-nav li.link { display: none; }
+  #homepage .header .homepage-nav .sign-up-link { display: none; }
+  #homepage .header .content { margin-top: 0px; padding: 40px 20px 70px; }
+  #homepage .header .content p { width: auto; margin-top: 10px; }
+  #homepage .header .header-devices-image { display: none; }
+  #homepage .mentors-section { padding: 60px 15px; background-repeat: no-repeat; background-color: #243640; }
+  #homepage .mentors-section .mentor-block { width: 100%; margin: 20px 0px; }
+  #homepage .mentors-section p { width: 100%; font-size: 16px; }
+  #homepage .courses-section { padding: 40px 15px; }
+  #homepage .courses-section .course-div-wrapper { margin-right: 0px; }
+  #homepage .courses-section .course-div { margin: 20px auto; height: 410px; }
+  #homepage .courses-section .course-div .description { bottom: 0px; }
+  #homepage .courses-section .course-div.coming-soon { height: 260px; }
+  #homepage .courses-section .course-div.coming-soon h1 { margin-top: 110px; }
+  #homepage .past-students-section .quote-box { height: auto; width: auto; margin: 15px; margin-bottom: 25px; padding-bottom: 40px; }
+  #homepage .past-students-section .quote-box:after { display: none; }
+  #homepage .footer-section .signup { width: 100%; } }
+/***********
+Anchor reset
+*************/
+a[name] { padding-top: 40px; margin-top: -40px; display: inline-block; }
+
+/***********
+Premium page base styles
+*************/
+.premium-div { padding: 75px 0px; }
+.premium-div h1 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; color: #000; font-weight: 700; font-size: 14px; margin-bottom: 10px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.2em; }
+.premium-div h2 { font-size: 16px; }
+.premium-div h3.description { color: #72777a; font-size: 17px; font-weight: 400; width: 700px; margin: auto; }
+.premium-div hr { width: 50px; text-align: center; height: 2px; border: none; background: #d5d7d8; margin: 0px auto 10px; }
+
+.premium-div.white { background: #FFFFFF; }
+
+.premium-div.grey { background: #f2f3f5; }
+
+.premium-div.blue { background: #262f34; }
+
+.premium-div.dark-blue { background: #1a1f22; }
+
+.premium-div.syllabus { background-image: url(../images/pro_landing/background_div3@2x.jpg); -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+
+.premium-div.testimonials { background-image: url(../images/pro_landing/background_div5@2x.jpg); -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+
+.enroll-button, .bottom-enroll-button { display: inline-block; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; font-size: 17px; font-weight: 600; letter-spacing: 0.025em; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; text-transform: none; height: 58px; line-height: 58px; padding: 0; width: 200px; margin-left: auto; margin-right: auto; }
+.enroll-button:hover, .bottom-enroll-button:hover { color: #FFFFFF; background: #da400e; }
+
+.bottom-enroll-button { margin-top: 20px; }
+
+/* Mobile-only scroll down button that replaces the enroll today button */
+#learn-more { display: none; }
+
+/***********
+Topbar
+*************/
+/* The fade animation that we have in core.css breaks the fixed backgrounds/parallax effect in Chrome */
+.body-container { padding-top: 0px; -webkit-animation: none; opacity: 1; }
+
+.nav { width: 1208px; margin: auto; position: relative; }
+
+/* This placeholder is for styles common to both topbars */
+.premium-slidedown-topbar .dl-logo, .premium-static-topbar .dl-logo { height: auto; width: 150px; margin: 28px 20px 0 20px; }
+.premium-slidedown-topbar .nav-right, .premium-static-topbar .nav-right { float: none; position: absolute; top: 0px; right: 0px; height: 73px; }
+.premium-slidedown-topbar dl.sub-nav, .premium-static-topbar dl.sub-nav { margin-right: 150px; -webkit-margin-before: 0em; -webkit-margin-after: 0em; border-collapse: collapse; margin-top: 0px; }
+.premium-slidedown-topbar dl.sub-nav dd, .premium-static-topbar dl.sub-nav dd { display: inline-block; text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; margin: 0px; font-size: 12px; }
+.premium-slidedown-topbar dl.sub-nav dd a, .premium-static-topbar dl.sub-nav dd a { color: #72777a; padding: 0px 15px; vertical-align: middle; display: inline-block; }
+.premium-slidedown-topbar dl.sub-nav dd.active a, .premium-static-topbar dl.sub-nav dd.active a { color: #f15b2a; }
+
+/* We can put a single class on the HTML element since we use @extend here. We define styles specific to the slidedown topbar below */
+.premium-slidedown-topbar { position: fixed; z-index: 11; background: #fff; top: -73px; height: 73px; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+.premium-slidedown-topbar .dl-logo { margin-top: 23px; }
+.premium-slidedown-topbar dl.sub-nav { margin-right: 150px; margin-top: 0px; }
+.premium-slidedown-topbar dl.sub-nav dd a { height: 73px; line-height: 73px; }
+.premium-slidedown-topbar dl.sub-nav dd a:hover { color: #f15b2a; }
+.premium-slidedown-topbar #cta-button { position: absolute; width: 130px; height: 50px; right: 0px; top: 10px; background: #f15b2a; text-align: center; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
+.premium-slidedown-topbar #cta-button h3 { color: #facaba; font-size: 11px; line-height: 1; padding: 5px; margin-top: 7px; font-weight: 400; }
+.premium-slidedown-topbar #cta-button h2 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; color: #FFFFFF; padding: 0px; margin: 0px; line-height: 1; }
+.premium-slidedown-topbar #cta-button:hover { background: #da400e; }
+
+/* Same as slidedown topbar except this is the static variant */
+.premium-static-topbar { top: 25px; }
+.premium-static-topbar dl.sub-nav { margin-top: 15px; margin-right: 0px; }
+.premium-static-topbar dl.sub-nav dd { position: relative; }
+.premium-static-topbar dl.sub-nav dd a { height: 50px; line-height: 50px; }
+.premium-static-topbar dl.sub-nav dd a:hover { background: none; color: #fff; }
+.premium-static-topbar dl.sub-nav dd a:after { opacity: 0; content: ''; position: absolute; bottom: 14px; left: 22px; right: 22px; height: 2px; background: #f15b2a; border: none; transition: opacity 0.2s ease; -moz-transition: opacity 0.2s ease; -webkit-transition: opacity 0.2s ease; -o-transition: opacity 0.2s ease ease; }
+.premium-static-topbar dl.sub-nav dd a:hover:after { opacity: 1; }
+
+/***********
+'Hero unit' div
+************/
+.premium-page-intro { height: 700px; background: #262f34; -webkit-background-size: cover; background-size: cover; background-image: url(../images/pro_landing/hero@2x.jpg); background-attachment: fixed; overflow: hidden; position: relative; }
+.premium-page-intro h1 { line-height: 1.1; opacity: 1; position: relative; color: #ffffff; padding-top: 200px; font-size: 60px; margin-bottom: 20px; margin-top: 50px; }
+.premium-page-intro p { color: #FFFFFF; margin-bottom: 50px; text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); font-size: 18px; font-weight: 500; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; position: relative; line-height: 1.5; }
+.premium-page-intro .enroll-button, .premium-page-intro .bottom-enroll-button { position: relative; }
+.premium-page-intro .shadow { position: absolute; width: 100%; height: 700px; background: rgba(0, 0, 0, 0.1); }
+.premium-page-intro .call-to-action { position: absolute; bottom: 20px; left: 50%; margin-left: -12px; }
+.premium-page-intro .call-to-action i { color: #fff; font-size: 30px; margin: auto; -webkit-animation: bounce 2s ease 0 2; -ms-animation: bounce 2s ease 0 2; animation: bounce 2s ease 0 2; position: relative; }
+
+/***********
+'Designlab method' div
+************/
+.method h1 { color: #000; }
+
+.col-three.method h2 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; color: #000; margin-bottom: 10px; }
+.col-three.method p { font-size: 14px; font-weight: 400; color: #72777a; line-height: 1.6; margin-bottom: 0; }
+.col-three.method img { margin-bottom: 20px; }
+
+/*************
+'Mentors' div
+************/
+.mentors .col-three { text-align: center; }
+.mentors .col-three img { margin-bottom: 20px; width: 100px; height: auto; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+.mentors .col-three h2 { color: #f15b2a; font-weight: 600; line-height: 20px; }
+.mentors .col-three h3 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; }
+.mentors .col-three p { font-size: 14px; font-weight: 400; color: #72777a; line-height: 1.6; display: none; }
+.mentors .col-three a { transition: opacity 0.2s ease; -moz-transition: opacity 0.2s ease; -webkit-transition: opacity 0.2s ease; -o-transition: opacity 0.2s ease ease; }
+.mentors .col-three a:hover { opacity: 0.8; }
+
+/***********
+'Testimonials' div
+************/
+.testimonials h1 { color: #fff; }
+.testimonials .carousel { background-color: none; margin: 0 auto 0 auto; max-width: 900px; height: 350px; position: relative; }
+.testimonials .carousel .testimonial { color: #fff; }
+.testimonials .carousel .testimonial .quote { margin: 20px auto 30px 0; width: 98%; background-color: #f15b2a; padding: 30px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; color: #fff; text-align: left; font-weight: 500; font-size: 15px; line-height: 1.4; position: relative; }
+.testimonials .carousel .testimonial .quote:after { top: 100%; left: 45px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(213, 98, 44, 0); border-top-color: #f15b2a; border-width: 15px; }
+.testimonials .carousel .testimonial .student { display: table; }
+.testimonials .carousel .testimonial .student img { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; width: 120px; display: table-cell; vertical-align: middle; }
+.testimonials .carousel .testimonial .student .info { display: table-cell; vertical-align: middle; padding-left: 15px; text-align: left; }
+.testimonials .carousel .testimonial .student .info h2 { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; color: #fff; line-height: 1; font-weight: 700; margin: 10px 0px; }
+.testimonials .carousel .testimonial .student .info p { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; color: #fff; line-height: 1; font-size: 14px; font-weight: 600; font-style: italic; }
+.testimonials .carousel .slick-dots { margin: 0; bottom: 5px; }
+.testimonials .carousel .slick-dots li { border: 2px solid #fff; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; height: 15px; width: 15px; }
+.testimonials .carousel .slick-dots li.slick-active { background-color: #fff; }
+.testimonials .carousel .slick-dots li a:before { content: ''; }
+
+/***********
+'Syllabus' div
+************/
+ul.weeks { width: 800px; margin: auto; list-style: none; }
+ul.weeks li { float: left; width: 25%; text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; color: #fff; padding: 10px 0px; margin: 0px; border: 1px solid #f15b2a; cursor: pointer; }
+ul.weeks li.selected { background: #f15b2a; }
+ul.weeks li:first-child { -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; }
+ul.weeks li:last-child { -o-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; }
+
+.syllabus h1 { color: #fff; margin-bottom: 30px; }
+
+.row.syllabus { display: table; width: 900px; position: relative; margin-top: 0; }
+.row.syllabus .week-container { position: absolute; }
+.row.syllabus .week-container .unit-container { margin-top: 30px; }
+.row.syllabus .col-three { text-align: center; display: table-cell; float: none; vertical-align: middle; width: 40%; }
+.row.syllabus .col-three img { width: 75px; height: 75px; }
+.row.syllabus .col-three h2 { color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; }
+.row.syllabus .col-twothird { padding: 20px 40px; display: table-cell; float: none; width: 60%; height: 100%; }
+.row.syllabus .col-twothird .left { display: table-cell; vertical-align: middle; width: 100px; text-align: left; padding-left: 10px; }
+.row.syllabus .col-twothird .right { display: table-cell; }
+.row.syllabus .col-twothird p { font-size: 14px; font-weight: 400; color: #fff; line-height: 1.8; text-align: left; margin: 0px; }
+
+/*************
+'FAQ' div
+************/
+div.row.faq { margin-top: 20px; }
+div.row.faq div { text-align: left; }
+div.row.faq i { color: #a3a3a3; position: relative; top: 2px; margin-right: 10px; font-size: 20px; }
+div.row.faq p { font-size: 14px; font-weight: 400; color: #72777a; line-height: 1.6; margin-left: 20px; font-size: 15px; }
+div.row.faq .questions-left { float: left; width: 275px; }
+div.row.faq .questions-left li { padding: 10px 0 10px 0; }
+div.row.faq .questions-left li a { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; color: #a3a3a3; font-size: 14px; padding: 10px 5px 10px 0; display: inline-block; }
+div.row.faq .questions-left li a.selected { border-bottom: 2px solid #f15b2a; margin-bottom: -2px; color: #000; }
+div.row.faq .answers-right { overflow: hidden; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; }
+div.row.faq .answers-right li { color: #3b3f40; padding: 15px 15px 5px 35px; }
+div.row.faq .answers-right li h3 { font-size: 16px; color: #666; }
+div.row.faq .answers-right li p { font-size: 14px; line-height: 1.8; margin-bottom: 9px; }
+
+/*************
+'Bottom call-to-action' div
+************/
+.premium-div.blue h1 { color: #fff; }
+.premium-div.blue hr { border: none; background: #414445; }
+.premium-div.blue h3 { color: #e6e6e6; font-weight: 300; letter-spacing: 0.02em; margin-bottom: 60px; }
+.premium-div.blue p, .premium-div.blue span { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; font-weight: 700; color: #6d7780; line-height: 1.6; }
+.premium-div.blue span.grey { font-size: 16px; }
+.premium-div.blue span.strikethrough { position: relative; }
+.premium-div.blue span.strikethrough:before { position: absolute; content: ""; left: 0; top: 38%; right: 0; border-top: 2px solid; border-color: red; -webkit-transform: rotate(-8deg); -ms-transform: rotate(-8deg); transform: rotate(-8deg); opacity: .7; }
+.premium-div.blue .signup-mobile { display: none; }
+
+/*************
+'Contact info' div
+************/
+.premium-div.dark-blue h3 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; font-weight: 700; color: #5d656a; line-height: 1.6; }
+.premium-div.dark-blue a { color: #5d656a; }
+.premium-div.dark-blue a:hover { opacity: .8; }
+.premium-div.dark-blue .icon-links { margin: 40px 0px; display: block; }
+.premium-div.dark-blue .icon-links a { color: #1a1f22; background: none; }
+.premium-div.dark-blue .icon-links a:first-child { margin-right: 20px; }
+.premium-div.dark-blue .icon-links i:hover { color: #262f34; }
+.premium-div.dark-blue .icon-links i { border-radius: 50%; border: 10px solid #6b747a; background: #393e41; font-size: 1.3em; }
+
+/*************
+Responsive styles
+************/
+@media screen and (min-width: 1600px) { .premium-page-intro { background-position: 0 -250px; } }
+@media screen and (max-width: 1040px) { .nav { width: auto !important; }
+  /* Magellan gets fucked on iPad so don't show the nav */
+  .premium-slidedown-topbar { display: none; }
+  .premium-static-topbar .nav-right { display: none; }
+  #cta-button { display: none; }
+  .body-container { padding-top: 0px; }
+  .container { padding: 0px !important; float: none; }
+  .container .row { margin-left: 0px; width: auto; }
+  .premium-page-intro { background-attachment: scroll; background-position: 0 0px; }
+  .premium-page-intro .background { background-position: 0 0px; }
+  .premium-page-intro h1.b { font-size: 44px; padding-top: 100px; }
+  .row.syllabus .col-three { float: none; display: block; width: 100%; text-align: center; margin-bottom: 20px; }
+  .row.syllabus .col-twothird { float: none; width: 100%; display: block; }
+  /* Temporarily hide syllabus & FAQ sections on small width. We need to design & code up responsive styles for these */
+  .premium-div.syllabus { display: none; }
+  .premium-div.faq-cont .questions-left { float: none !important; width: auto !important; text-align: center; }
+  .premium-div.faq-cont .questions-left li { padding: 10px 0 10px 0; }
+  .premium-div.faq-cont .answers-right { overflow: hidden; }
+  .premium-div.faq-cont .answers-right li { padding: 10px !important; }
+  .premium-div + a { display: none; }
+  .premium-div.testimonials .carousel { margin: 0 50px 0 50px; } }
+@media screen and (max-width: 767px) { /* no olark */
+  #habla_beta_container_do_not_rely_on_div_classes_or_names { display: none; }
+  /* Mobile-only scroll down button that replaces the enroll today button */
+  #learn-more { display: block; }
+  #enroll-today { display: none; }
+  .premium-static-topbar { display: none; }
+  .dl-logo { display: none; }
+  .container .columns { float: none; width: 100%; margin-bottom: 40px; }
+  .container .row { margin-top: 30px; }
+  .premium-page-intro { background-position: -250px 0px; height: 500px; padding: 0px 10px; }
+  .premium-page-intro .shadow { display: none; }
+  .premium-page-intro .call-to-action { display: none; }
+  .premium-page-intro h1 { font-size: 32px; padding-top: 80px; margin-bottom: 25px; }
+  .premium-page-intro p { margin-bottom: 30px; font-size: 15px; }
+  .premium-div { padding: 30px 0px; }
+  .premium-div h3.description { font-size: 16px; width: 100%; padding: 20px; margin-bottom: 30px; }
+  .premium-div.mentors .row:last-child { display: none; }
+  .premium-div.mentor-info { padding: 80px 0px; }
+  .premium-div.testimonials .carousel { height: 400px; margin-left: auto; margin-right: auto; }
+  .premium-div.testimonials .testimonial { padding: 0 20px; }
+  .premium-div.testimonials .student img { width: 80px; }
+  .pricing { display: none; }
+  .signup-mobile { display: block !important; }
+  .signup-mobile input { padding: 10px; margin-top: 10px; width: 250px; }
+  .signup-mobile h3.description { padding-left: 35px; padding-right: 35px; }
+  .signup-mobile .enroll-button, .signup-mobile .bottom-enroll-button { border-bottom: none; text-transform: none; } }
+#course-description .course-header { position: relative; background-repeat: repeat; background: #195273; background-image: url(../images/course_description/bg.jpg); -webkit-background-size: 100%; background-size: 100%; }
+#course-description .course-header .inner { width: 860px; margin: auto; position: relative; text-align: left; padding: 130px 0px 110px; }
+#course-description .course-header .inner .logo-image { position: absolute; left: 0; top: 30px; padding-left: 0px; width: 120px; }
+#course-description .course-header .inner .what-is { position: absolute; top: 25px; right: 25px; color: #fff; border: 2px solid #fff; cursor: pointer; font-size: 14px; height: 32px; line-height: 32px; text-transform: none; letter-spacing: 0px; }
+#course-description .course-header .inner .what-is span { line-height: 30px; }
+#course-description .course-header .inner .what-is:hover { color: #666; }
+#course-description .course-header .inner .call-to-action { background: rgba(0, 0, 0, 0.3); width: 300px; padding: 15px; right: 0px; top: 160px; position: absolute; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }
+#course-description .course-header .inner .call-to-action img { width: 50px; height: 50px; display: inline-block; margin-right: 10px; vertical-align: middle; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+#course-description .course-header .inner .call-to-action p { color: #fff; font-size: 14px; display: inline-block; vertical-align: middle; width: 205px; }
+#course-description .course-header .inner h1 { font-weight: 400; color: #fff; font-size: 44px; margin-bottom: 10px; }
+#course-description .course-header .inner p { color: #fff; font-size: 16px; line-height: 1.3; width: 560px; }
+#course-description .course-content { background: whitesmoke url(../images/homepage_v2/background3.png); background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; position: relative; background-position-x: -280px; }
+#course-description .course-content .at-a-glance { background: #ffffff; padding: 15px; position: absolute; top: 0; left: 0; right: 0; z-index: 1000; border-bottom: 1px solid #ebebeb; /* NOTE: the widths on these h1 & h2 are necessary or else they get messed up on Windows browsers for some reason */ }
+#course-description .course-content .at-a-glance .container { text-align: left; }
+#course-description .course-content .at-a-glance h1 { font-weight: 600; display: inline-block; margin-right: 25px; font-size: 12px; color: #a3a3a3; vertical-align: middle; width: 97px; }
+#course-description .course-content .at-a-glance h2 { font-weight: 800; display: inline-block; margin-right: 10px; padding-right: 10px; font-size: 14px; color: #a3a3a3; font-weight: 600; letter-spacing: -0.03em; border-right: 1px solid #ddd; }
+#course-description .course-content .at-a-glance h2:last-child { border-right: 0px; }
+#course-description .course-content .at-a-glance h2.start-date { width: 195px; }
+#course-description .course-content .at-a-glance h2.week-time { width: 140px; }
+#course-description .course-content .at-a-glance h2 i { margin-right: 10px; }
+#course-description .course-content .container { width: 860px; margin: auto; position: relative; }
+#course-description .course-content .inner-left { width: 560px; float: left; text-align: left; margin-right: 80px; position: relative; padding-top: 80px; }
+#course-description .course-content .inner-left section { margin-bottom: 50px; }
+#course-description .course-content .inner-left section h1 { font-size: 26px; color: #676767; margin-bottom: 10px; font-weight: 300; }
+#course-description .course-content .inner-left .syllabus-section td { vertical-align: top; padding-top: 20px; border-bottom: 1px solid #ddd; }
+#course-description .course-content .inner-left .syllabus-section .week { width: 80px; }
+#course-description .course-content .inner-left .syllabus-section .week h2 { color: #a3a3a3; font-weight: 400; letter-spacing: 0.15em; }
+#course-description .course-content .inner-left .syllabus-section .week.two h2 { padding-top: 8px; }
+#course-description .course-content .inner-left .syllabus-section .week.three h2 { padding-top: 6px; }
+#course-description .course-content .inner-left .syllabus-section .week.four h2 { padding-top: 8px; }
+#course-description .course-content .inner-left .syllabus-section .content { padding-left: 10px; }
+#course-description .course-content .inner-left .syllabus-section .content .week-icon { display: inline-block; width: 36px; text-align: center; vertical-align: middle; margin-right: 10px; }
+#course-description .course-content .inner-left .syllabus-section .content img { display: inline-block; }
+#course-description .course-content .inner-left .syllabus-section .content h1 { border-bottom: none; color: #000; font-size: 14px; line-height: 1; margin-bottom: 15px; vertical-align: middle; font-weight: 400; }
+#course-description .course-content .inner-left .syllabus-section .content h1 span { position: relative; top: 1px; }
+#course-description .course-content .inner-left .syllabus-section .content p { color: #666; font-size: 14px; line-height: 1.3; margin-bottom: 15px; }
+#course-description .course-content .inner-left .who-its-for { display: inline-block; width: 125px; vertical-align: bottom; padding: 0px 5px; margin-right: 80px; text-align: center; position: relative; cursor: pointer; opacity: 0.7; }
+#course-description .course-content .inner-left .who-its-for img { width: auto; height: 100px; margin: 10px 0px; max-width: 125px; }
+#course-description .course-content .inner-left .who-its-for h2 { margin-bottom: 10px; font-size: 13px; color: #a3a3a3; }
+#course-description .course-content .inner-left .who-its-for:first-child { padding-left: 0px; }
+#course-description .course-content .inner-left .who-its-for:last-child { margin-right: 0px; }
+#course-description .course-content .inner-left .who-its-for.selected { opacity: 1; }
+#course-description .course-content .inner-left .who-its-for.selected h2 { color: #000; }
+#course-description .course-content .inner-left .who-its-for-explainer { margin-top: 15px; padding: 15px; position: relative; background: #fafafa; }
+#course-description .course-content .inner-left .who-its-for-explainer p { color: #4b5b64; font-size: 14px; }
+#course-description .course-content .inner-left .who-its-for.selected:after, #course-description .course-content .inner-left .who-its-for.selected:before { bottom: -20; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+#course-description .course-content .inner-left .who-its-for.selected:after { border-color: transparent; border-bottom-color: #fafafa; border-width: 20px; margin-left: -20px; }
+#course-description .course-content .inner-left .who-its-for.selected:before { border-color: rgba(204, 204, 204, 0); border-width: 13px; margin-left: -13px; }
+#course-description .course-content .inner-left section.faq .question { margin-bottom: 35px; }
+#course-description .course-content .inner-left section.faq h1 { margin-bottom: 15px; }
+#course-description .course-content .inner-left section.faq h3 { font-size: 14px; margin-bottom: 10px; border-bottom: 1px solid #ddd; font-weight: 700; padding-bottom: 5px; font-weight: 400; }
+#course-description .course-content .inner-left section.faq p { font-size: 15px; margin-bottom: 15px; line-height: 1.4; }
+#course-description .course-content .inner-left section.faq li { font-size: 14px; line-height: 1.4; list-style: none; margin-bottom: 10px; font-weight: 400; vertical-align: top; }
+#course-description .course-content .inner-left section.faq li i { margin-right: 5px; }
+#course-description .course-content .inner-left section.faq li h1 { font-size: 13px; color: #000; margin-bottom: 5px; }
+#course-description .course-content .inner-left section.faq li:nth-child(2n+1) { padding-right: 10px; }
+#course-description .course-content .inner-left section.faq a { font-weight: bold; text-decoration: underline; }
+#course-description .course-content .inner-right { width: 220px; float: left; position: relative; z-index: 1001; }
+#course-description .course-content .inner-right .enroll-box { background: #fff; padding: 15px 25px; margin-top: -40px; position: relative; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border: 1px solid #ebebeb; }
+#course-description .course-content .inner-right .enroll-box .top-icon { position: absolute; top: -30px; left: 50%; margin-left: -30px; width: 60px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border: 1px solid #ebebeb; }
+#course-description .course-content .inner-right .enroll-box h3 { color: #a3a3a3; margin-top: 30px; font-weight: 400; margin-bottom: 5px; }
+#course-description .course-content .inner-right .enroll-box h1 { color: #676767; font-size: 13px; padding: 10px 0px; position: relative; text-align: center; line-height: 1.3; }
+#course-description .course-content .inner-right .enroll-box h1 i { color: #a3a3a3; font-size: 16px; width: 20px; text-align: center; position: absolute; }
+#course-description .course-content .inner-right .enroll-box h1 i.icon-question-sign { margin-left: 5px; }
+#course-description .course-content .inner-right .enroll-box h1:after { content: ""; position: absolute; background: #ddd; height: 1px; width: 40px; left: 50%; margin-left: -20px; bottom: 0px; }
+#course-description .course-content .inner-right .enroll-box h1:last-child { margin-bottom: 5px; }
+#course-description .course-content .inner-right .enroll-box h1:last-child:after { background: none; }
+#course-description .course-content .inner-right .enroll-box a.button { display: inline-block; width: 80%; height: 40px; line-height: 40px; font-size: 15px; text-transform: none; letter-spacing: 0em; margin: 10 0px; }
+#course-description .course-content .inner-right .guarantee { margin-top: 10px; }
+#course-description .course-content .inner-right .guarantee i { color: #a3a3a3; font-size: 16px; margin-right: 5px; vertical-align: middle; position: absolute; left: 12px; top: 0px; }
+#course-description .course-content .inner-right .guarantee p { font-size: 13px; font-weight: 600; color: #a3a3a3; vertical-align: middle; position: relative; padding-left: 7px; }
+#course-description .course-content .inner-right .signup-box { background: #fff; padding: 25px 15px 15px; margin-top: 40px; position: relative; border: 1px solid #ebebeb; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }
+#course-description .course-content .inner-right .signup-box h3 { color: #a3a3a3; text-align: center; font-size: 12px; margin-bottom: 10px; }
+#course-description .course-content .inner-right .signup-box input[type="email"] { padding: 10px; text-align: left; margin: 5px 0px 20px; }
+#course-description .course-content .inner-right .signup-box button { display: inline-block; font-size: 13px; line-height: 32px; height: 32px; text-transform: none; letter-spacing: 0em; border: 1px solid #ddd; }
+#course-description .course-content .inner-right .filler-div { height: 60px; }
+
+@media screen and (max-width: 768px) { #course-description .course-header .inner { width: auto; padding-left: 20px; padding-right: 20px; }
+  #course-description .course-header .inner p { width: auto; }
+  #course-description .course-header .inner .logo-image { top: 36px; left: 20px; width: 100px; }
+  #course-description .course-header .what-is { display: block; margin: auto; }
+  #course-description .course-content .container { width: auto; text-align: center; }
+  #course-description .course-content .at-a-glance { position: relative; z-index: 1002; }
+  #course-description .course-content .at-a-glance .container { text-align: center; }
+  #course-description .course-content .at-a-glance h1 { display: block; margin-bottom: 5px; width: auto; }
+  #course-description .course-content .at-a-glance h2 { display: inline-block; font-size: 15px; margin-bottom: 3px; width: auto !important; }
+  #course-description .course-content .at-a-glance h2:nth-child(2) { display: block; border-right: none; }
+  #course-description .course-content .inner-left { width: auto; float: none; text-align: center; padding-right: 0px; margin-right: 0px; }
+  #course-description .course-content .inner-left section { padding: 15px; }
+  #course-description .course-content .inner-left .who-its-for { width: 33%; margin: 0px; }
+  #course-description .course-content .inner-left .who-its-for img { width: 100%; }
+  #course-description .course-content .inner-left .faq .question ul { text-align: left; }
+  #course-description .course-content .inner-right { float: none; width: auto; margin: 40px; }
+  #course-description .course-content .inner-right .enroll-box { padding: 15px 25px 30px; }
+  #course-description .course-content .inner-right .enroll-box h1.price i { margin-left: -20px; left: auto; }
+  #course-description .course-content .inner-right .guarantee i { left: auto; margin-left: -20px; }
+  #course-description .course-content .inner-right .signup-box input[type="email"] { display: block; width: 100%; }
+  #course-description .course-content .inner-right .filler-div { display: none; }
+  #course-description .footer-section { padding-top: 0px; }
+  #course-description .footer-section .info { width: auto; padding: 10px; } }
+/*******
+Mentor page placeholders
+*******/
+.mentor-info h2, .mentor-signup h2, .mentor-signup .lead-submitted, .mentor-info h1, .mentor-signup h1, .mentor-signup label { font-size: 34px; font-weight: 500; color: #fff; }
+
+.mentor-info h2, .mentor-signup h2, .mentor-signup .lead-submitted { font-weight: 300; font-size: 40px; font-size: 26px; color: #ccc; }
+
+/*************
+Mentor LP styles
+************/
+/*************
+Cover div
+************/
+#mentor-home-logo { width: 150px; margin-top: 20px; position: absolute; left: 50%; margin-left: -75px; }
+
+.mentor-page-intro.mentor { background-image: url(../images/cover_pic@2x.jpg); height: 100%; -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; overflow: hidden; position: relative; z-index: 15; }
+.mentor-page-intro.mentor .box { border: 1px solid #ccc; text-align: center; padding: 25px 30px; margin: auto; margin-top: 250px; display: inline-block; position: absolute; bottom: 50%; left: 50%; margin-left: -240px; margin-bottom: -100px; }
+.mentor-page-intro.mentor .box h1 { padding: 0px; margin: 0px; font-size: 38px; margin-bottom: 0px; font-weight: 500; line-height: 1.3; color: #fff; }
+.mentor-page-intro.mentor .box h2 { font-weight: 300; font-size: 26px; color: #ccc; margin: 0px; line-height: 1.3; }
+
+/*************
+Connectors
+************/
+.mentor-spine { background: #fff; border: none; width: 1px; position: absolute; left: 50%; }
+.mentor-spine.top { height: 50%; bottom: 0px; margin-bottom: -100px; }
+.mentor-spine.extended { height: 75px; top: 0px; }
+.mentor-spine .dot { position: absolute; bottom: 0px; background: #fff; border: none; width: 10px; height: 10px; left: -5px; }
+
+.mentor-spine-dotted { height: 40px; position: absolute; left: 50%; width: 4px; border: none; }
+.mentor-spine-dotted.light { background-image: url(../images/white-dot@2x.png); bottom: 0px; }
+.mentor-spine-dotted.dark { background-image: url(../images/dark-dot@2x.png); top: 0px; }
+
+/*************
+Mentor benefits
+************/
+.mentor-info { background: #1E1F21; position: relative; padding: 100px 0px 160px; z-index: 20; }
+.mentor-info .row { margin: 20px auto 0px; }
+.mentor-info h1 { font-size: 30px; font-weight: 400; margin-bottom: 50px; }
+.mentor-info h2 { font-size: 24px; margin: 20px 0px; font-weight: 400; }
+.mentor-info p { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; color: #777; font-size: 16px; width: 80%; margin: auto; margin-left: 50px; text-align: left; line-height: 1.3; font-weight: 600; margin-top: -10px; }
+.mentor-info .image-div { border: 1px solid #fff; display: inline-block; width: 200px; height: 200px; margin: 35px 0px 10px; }
+.mentor-info img { width: 100px; height: auto; margin-top: 75px; }
+.mentor-info img.network { width: 120px; margin-top: 60px; }
+.mentor-info img.collab { width: 70px; margin-top: 50px; }
+.mentor-info .interest-box { padding: 0px 15px; border: 1px solid #fff; display: inline-block; position: absolute; bottom: 30px; left: 50%; margin-left: -100px; }
+
+/*************
+Signup Div
+************/
+.mentor-signup { background-color: #307B8C; padding: 40px 0px; position: relative; display: block; z-index: 12; }
+.mentor-signup h1 { margin: 20px 0px 10px; line-height: 1; }
+.mentor-signup h2 { font-size: 1.21rem; margin-bottom: 30px; font-weight: 600; color: #bbb; }
+.mentor-signup .field { margin-bottom: 15px; }
+.mentor-signup label { font-size: 16px; text-align: left; display: block; margin-bottom: 5px; }
+.mentor-signup input { opacity: 0.6; background: #1F5463; border: none; float: left; width: 100%; padding: 15px; font-size: 20px; color: #fff; height: 50px; display: inline-block; margin-bottom: 9px; }
+.mentor-signup input:focus { -webkit-box-shadow: none; box-shadow: none; background: #0C2130; border: none; }
+.mentor-signup form { width: 460px; margin: auto; clear: both; }
+.mentor-signup form .error { display: block; color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 13px; text-align: left; margin-bottom: 10px; font-weight: 300; background-image: url(../images/error-icon@2x.png); background-repeat: no-repeat; padding-left: 35px; -webkit-background-size: 18px; background-size: 18px; background-position: 5px 58px; transition: opacity 0.3s; -webkit-transition: opacity 0.3s; }
+.mentor-signup form .button { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; display: block; margin: auto; padding: 0px 20px; font-size: 16px; }
+.mentor-signup .lead-submitted { padding: 20px; display: inline-block; width: auto; font-size: 18px; font-weight: 600; }
+.mentor-signup .share { margin: 40 0px 10px; }
+.mentor-signup .share p { color: #fff; font-size: 16px; margin-bottom: 15px; }
+.mentor-signup .share i { margin: 10px; color: #fff; font-size: 24px; vertical-align: middle; }
+.mentor-signup .share i:hover { color: #ddd; }
+.mentor-signup .background { content: ""; background-image: url(../images/mentor_pattern3@2x.png); opacity: 0.08; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; background-repeat: repeat; animation: slideup 25s linear infinite; -webkit-animation: slideup 25s linear infinite; -moz-animation: slideup 25s linear infinite; }
+
+/*************
+Press section
+************/
+.press { background: #262f34; padding: 50px 0px; }
+.press h2 { margin-bottom: 40px; }
+.press .row { width: 600px; }
+.press img { height: 45px; width: auto; margin: 0px; opacity: 0.3; }
+.press img.fc { margin-top: 2px; }
+.press img.forbes { height: 40px; }
+.press img.gw { height: 40px; margin-top: 3px; }
+.press h3 { text-transform: uppercase; font-size: 12px; letter-spacing: 0.1em; font-weight: 700; font-size: 12px; font-weight: 700; color: #5d656a; line-height: 1.6; margin-top: 40px; display: block; }
+.press h3 a { color: #454b4f; }
+
+/*************
+Animations
+************/
+@keyframes slideup { 0% { top: 0px; }
+  100% { top: -1010px; } }
+@-webkit-keyframes slideup { 0% { top: 0px; }
+  100% { top: -1010px; } }
+/*************
+Responsive styles
+************/
+@media screen and (max-width: 767px) { .mentor-page-intro.mentor { background-attachment: scroll; }
+  .mentor-page-intro.mentor .box { padding: 25px 20px; bottom: 60%; }
+  .mentor-page-intro.mentor .box h1 { font-size: 18px; }
+  .mentor-page-intro.mentor .box h2 { font-size: 13px; }
+  .mentor-spine.top { height: 60%; }
+  .box { width: 80%; margin-left: -40% !important; }
+  .container .columns { float: none; width: 100%; margin-bottom: 40px; }
+  .container .row { margin-top: 30px; }
+  .mentor-info { padding: 120px 0px !important; }
+  .mentor-info h2.title { width: 80%; margin: auto; }
+  .mentor-info .fadeInUp, .mentor-info .flipInX { -webkit-animation: none !important; -ms-animation: none !important; animation: none !important; visibility: visible !important; }
+  .mentor-signup h1 { font-size: 30px; line-height: 1.3; }
+  .mentor-signup form { width: 80%; } }
+body.mentor-register { background: #fafafa; }
+
+#mentor-register .header { width: 100%; padding: 40px 0px; background: #2E6AB3; background-image: url(../images/homepage_v2/background3.png); background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; }
+#mentor-register .header .container { text-align: left; width: 960px; margin: auto; }
+#mentor-register .header img { opacity: 0.4; margin-bottom: 25px; width: 100px; height: auto; }
+#mentor-register .header h1 { font-weight: 400; font-size: 44px; color: #fff; }
+#mentor-register .content { width: 960px; margin: auto; background: #fff; padding: 25px 60px; margin-bottom: 40px; }
+#mentor-register .content h3 { text-align: center; margin: 20px 0px; font-weight: 500; color: #72777a; font-size: 15px; }
+#mentor-register .content section { padding: 15px 0px; margin: 15px 0px; border-bottom: 1px solid #ebebeb; position: relative; }
+#mentor-register .content section:first-child { border-top: 1px solid #ebebeb; padding-top: 25px; }
+#mentor-register .content section:first-child .number { top: 26px; }
+#mentor-register .content section .number { padding: 4px 5px 2px; background: #ddd; color: #fff; position: absolute; top: 17px; left: -40px; font-size: 9px; }
+#mentor-register .content section .number:after, #mentor-register .content section .number:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+#mentor-register .content section .number:after { border-color: rgba(204, 204, 204, 0); border-left-color: #ddd; border-width: 8px; margin-top: -8px; }
+#mentor-register .content section .number:before { border-color: transparent; border-width: 23px; margin-top: -21px; }
+#mentor-register .content section h1 { font-weight: 600; font-size: 16px; color: #000; margin-bottom: 5px; }
+#mentor-register .content section p { font-weight: 600; color: #72777a; font-size: 14px; margin-bottom: 20px; }
+#mentor-register .content section label { color: #000; font-weight: bold; display: block; margin-bottom: 6px; }
+#mentor-register .content section label.error { color: #f15b2a; }
+#mentor-register .content section input:not([type="file"]), #mentor-register .content section textarea { padding: 10px; width: 240px; margin: 0 25px 25px 0px; }
+#mentor-register .content section input:not([type="file"]).long, #mentor-register .content section textarea.long { width: 300px; margin-right: 60px; }
+#mentor-register .content section .form-field { display: inline-block; vertical-align: top; }
+#mentor-register .content section .photo-upload, #mentor-register .content section .personal-info { display: table-cell; vertical-align: top; }
+#mentor-register .content section .photo-upload { padding-right: 30px; text-align: center; }
+#mentor-register .content section .profile-pic-preview, #mentor-register .content section .default-profile-pic { width: 150px; height: 150px; overflow: hidden; }
+#mentor-register .content section .default-profile-pic { background-image: url(../images/avatar-icon.png); -webkit-background-size: 100%; background-size: 100%; }
+#mentor-register .content section .upload-button-cont { width: 105px; margin-left: auto; margin-right: auto; }
+#mentor-register .content section .upload-button-cont button { text-transform: none; letter-spacing: 0; margin: 15px auto 10px; display: inline-block; background: #262f34; }
+#mentor-register .content .submit-button { float: right; text-transform: none; letter-spacing: 0; font-size: 14px; }
+
+/***********
+Page Setup
+***********/
+.page-wrap { position: absolute; top: 0; bottom: 0px; left: 0px; padding-top: 0px; margin-top: 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; transition: transform 0.4s; -webkit-transition: -webkit-transform 0.4s; }
+
+.expanded .page-wrap { transform: translate3d(0, 500px, 0); -webkit-transform: translate3d(0, 500px, 0); -moz-transform: translate3d(0, 500px, 0); }
+
+.top-off-canvas-menu { transition: height 0.4s; -webkit-transition: height 0.4s; -moz-transition: height 0.4s; -o-transition: height 0.4s; height: 0px; top: 0; bottom: 0; left: 0px; width: 100%; position: absolute; overflow-y: hidden; overflow-x: hidden; z-index: 1001; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; -webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.3); background-image: url(../images/mentor_profile_page/bg_pattern@2x.png); background-repeat: repeat; }
+
+.expanded .top-off-canvas-menu { height: 500px; }
+
+.off-canvas-wrap { width: 100%; height: 100%; }
+
+/***********
+How it works header
+***********/
+.how-it-works-content { display: none; opacity: 0; -webkit-transition: opacity 0.4s; transition: opacity 0.4s; }
+.how-it-works-content h1 { color: #fff; font-weight: 400; margin-top: 40px; }
+.how-it-works-content h2 { color: #fff; font-size: 18px; margin-bottom: 5px; }
+.how-it-works-content p { font-size: 15px; }
+.how-it-works-content img { height: 150px; margin-bottom: 20px; }
+
+.expanded .how-it-works-content { display: block; opacity: 1; width: 960px; margin: auto; }
+
+/***********
+Mentor page
+***********/
+#mentor .mentor-header { position: relative; padding: 150px 0px 120px; background-repeat: repeat; -webkit-animation-delay: 0.5s; -webkit-animation-duration: 0.2s; -moz-animation-delay: 0.5s; -moz-animation-duration: 0.2s; -webkit-animation-delay: 0.5s; animation-delay: 0.5s; -webkit-animation-duration: 0.2s; animation-duration: 0.2s; background: #000; }
+#mentor .mentor-header .is-a-mentor { color: #fff; font-size: 18px; padding: 18px; font-weight: 400; position: absolute; left: 0; top: -130px; padding-left: 0px; }
+#mentor .mentor-header .what-is { position: absolute; top: -115px; right: 0px; color: #fff; border: 2px solid #fff; cursor: pointer; font-size: 14px; height: 32px; line-height: 32px; text-transform: none; letter-spacing: 0px; text-transform: none; letter-spacing: 0; }
+#mentor .mentor-header .what-is span { line-height: 30px; }
+#mentor .mentor-header .what-is:hover { color: #666; }
+#mentor .mentor-header .inner { width: 760px; margin: auto; position: relative; }
+#mentor .mentor-header .left { float: left; width: 180px; }
+#mentor .mentor-header .right { float: left; text-align: left; width: 500px; margin-left: 30px; }
+#mentor .mentor-header img { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; width: 180px; height: 180px; }
+#mentor .mentor-header h1 { color: #fff; font-size: 44px; line-height: 1; }
+#mentor .mentor-header h3 { color: #fff; line-height: 1; margin: 5px 0px; }
+#mentor .mentor-header p { color: #ddd; font-size: 16px; line-height: 1.3; margin-bottom: 5px; }
+#mentor .mentor-header p.icons { margin-top: 10px; }
+#mentor .mentor-header a { font-size: 20px; color: #ddd; margin-right: 5px; }
+#mentor .mentor-header .works-at { position: absolute; width: 600px; left: 50%; margin-left: -300px; bottom: -60px; text-align: center; }
+#mentor .mentor-header .works-at img { width: 60px; height: 60px; margin: 10px 0px; -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
+#mentor .mentor-header .works-at h4 { color: #000; font-weight: 400; font-size: 15px; }
+#mentor .mentor-content { background: #fff; }
+#mentor .mentor-content .inner { width: 760px; margin: auto; padding: 60px 0px; }
+#mentor .mentor-content h2 { margin: 20 0px 50px; color: #a3a3a3; font-size: 14px; font-weight: 400; position: relative; }
+#mentor .mentor-content h2:after { content: ""; background: #ccc; width: 60px; margin: auto; height: 1px; position: absolute; bottom: -20px; left: 50%; margin-left: -30px; }
+#mentor .mentor-content section { margin: 50px 0px; }
+#mentor .mentor-content .mentor-work { width: 620px; margin: auto; }
+#mentor .mentor-content .mentor-work .image-container { vertical-align: top; display: table-cell; }
+#mentor .mentor-content .mentor-work .image-container img { width: 150px; max-height: 150px; }
+#mentor .mentor-content .mentor-work .image-container:nth-child(2n) img { width: 300px; margin: 0px 10px; max-height: 300px; }
+#mentor .mentor-content .mentor-work .image-container a { font-weight: 400; color: #a3a3a3; margin-top: 10px; display: block; }
+#mentor .mentor-content .mentor-student { display: inline-block; width: 250px; text-align: center; margin: 0px 0px 30px; }
+#mentor .mentor-content .mentor-student img { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; height: 110px; width: 110px; border: 3px solid #fff; -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
+#mentor .mentor-content .mentor-student h3 { color: #000; font-weight: 400; }
+#mentor .mentor-content .mentor-student p { font-size: 14px; color: #a3a3a3; }
+#mentor .mentor-content .testimonial { width: 630px; margin: 20px auto 60px; }
+#mentor .mentor-content .testimonial h3 { background: #fafafa; padding: 20px; font-weight: 400; }
+#mentor .mentor-content .testimonial p { float: right; font-size: 13px; margin-top: 10px; }
+#mentor .mentor-footer { background: #262f34; padding: 60px 0px 120px; position: relative; background-image: url(../images/mentor_profile_page/footer-bg@2x.jpg); background-repeat: repeat; }
+#mentor .mentor-footer h1.announcement { font-weight: 400; margin-bottom: 10px; color: #fff; line-height: 1; font-size: 26px; }
+#mentor .mentor-footer h3 { font-style: italic; font-weight: 300; color: #fff; line-height: 1; margin-bottom: 30px; font-size: 16px; }
+#mentor .mentor-footer .learn-with-mentor-button { background: #77BA3B; text-transform: none; letter-spacing: 0em; font-weight: 600; display: inline-block; font-size: 18px; }
+#mentor .mentor-footer .learn-with-mentor-button:hover { background: #6ba635; }
+#mentor .mentor-footer h2 { color: #fff; margin: 30px 0px 10px; font-weight: 400; opacity: 0.3; }
+#mentor .mentor-footer img { opacity: 0.3; width: 100px; }
+#mentor .mentor-footer i { color: #000; background: #fff; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; padding: 6px; font-size: 20px; display: inline-block; margin-top: 65px; }
+#mentor .mentor-footer i.icon-facebook { margin-left: 10px; padding: 6px 11px; }
+#mentor .mentor-footer .shuffle-button { border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; background-image: url(../images/mentor_profile_page/shuffle-button.png); background-repeat: no-repeat; background-position: 10px; padding: 10px; border: 2px solid #A0A0A1; color: #A0A0A1; -webkit-background-size: 20px; background-size: 20px; padding-left: 40px; display: inline-block; margin-top: 20px; }
+#mentor .mentor-footer:after { top: 0%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-top-color: #ffffff; border-width: 20px; margin-left: -20px; }
+
+@media screen and (max-width: 768px) { .expanded .top-off-canvas-menu { height: 700px; overflow-y: none; }
+  .expanded .how-it-works-content { width: auto; }
+  .expanded .how-it-works-content h1 { font-size: 18px; }
+  .expanded .how-it-works-content img { height: 80px; margin-bottom: 10px; }
+  .expanded .how-it-works-content h2 { font-size: 16px; }
+  .expanded .how-it-works-content p { font-size: 14px; }
+  .expanded .page-wrap { transform: translate3d(0, 700px, 0); -webkit-transform: translate3d(0, 700px, 0); -moz-transform: translate3d(0, 700px, 0); }
+  #mentor .mentor-header { padding: 40px 0px 120px; }
+  #mentor .mentor-header .is-a-mentor { position: relative; top: 0px; }
+  #mentor .mentor-header .what-is { position: relative; width: 50%; margin: auto; top: 0px; margin-bottom: 40px; font-size: 10px; }
+  #mentor .mentor-header .inner { width: auto; }
+  #mentor .mentor-header .left { float: none; width: auto; }
+  #mentor .mentor-header .right { float: none; width: auto; text-align: center; margin: 0px; padding: 20px; }
+  #mentor .mentor-header .works-at { position: absolute; width: 300px; left: 50%; margin-left: -150px; }
+  #mentor .mentor-content .inner { width: auto; }
+  #mentor .mentor-content .mentor-work { width: auto; }
+  #mentor .mentor-content .mentor-work .image-container { display: block; margin: 20px 0px; }
+  #mentor .mentor-content .testimonial { width: auto; padding: 15px; }
+  #mentor .mentor-content h1.announcement { padding: 20px; font-size: 24px; }
+  #mentor .mentor-footer { padding: 60px 20px 120px; } }
+body#mentors-roster-body { background: #fff; }
+
+#mentor-roster .container { width: 860px; margin: auto; position: relative; }
+#mentor-roster p.half-width { width: 50%; margin: auto; }
+#mentor-roster h1 { font-size: 30px; }
+#mentor-roster .header { background: #262F34; height: 400px; width: 100%; position: relative; background-image: url(../images/mentor-roster/top-bg.jpg); background-repeat: repeat; }
+#mentor-roster .header .homepage-nav { padding: 50px 0px; }
+#mentor-roster .header .homepage-nav ul { list-style: none; }
+#mentor-roster .header .homepage-nav li { float: left; margin-right: 25px; color: #fff; font-weight: 600; font-size: 14px; }
+#mentor-roster .header .homepage-nav li img { width: 130px; margin-right: 10px; padding-top: 1px; }
+#mentor-roster .header .homepage-nav li a { color: #fff; }
+#mentor-roster .header .homepage-nav li button { border: none; background: none; outline: none; text-transform: uppercase; letter-spacing: 0.1em; padding: 0; }
+#mentor-roster .header .homepage-nav .sign-up-link { position: absolute; right: 0px; top: 40px; height: 32px; line-height: 32px; outline: none; font-size: 14px; text-transform: none; letter-spacing: 0em; }
+#mentor-roster .header .content { text-align: center; margin-top: 50px; }
+#mentor-roster .header .content h1 { color: #fff; font-size: 50px; font-weight: 300; margin-bottom: 10px; }
+#mentor-roster .header .content p { color: #fff; font-size: 16px; width: 480px; line-height: 1.2; margin: auto; }
+#mentor-roster .header .little-dude-image { position: absolute; left: 50%; bottom: -137px; width: auto; z-index: 101; width: 120px; margin-left: -60px; height: auto; }
+#mentor-roster .mentor-list-section { background: #fafafa; padding: 40px 0px; background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; background-position-x: -150px; background-image: url(../images/homepage_v2/background3.png); }
+#mentor-roster .mentor-list-section .mentor-list-inner { width: 960px; margin: auto; }
+#mentor-roster .mentor-list-section .mentor-block { display: inline-block; padding: 30px; margin: 0px 20px 30px 0px; text-align: center; background: #fff; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; position: relative; }
+#mentor-roster .mentor-list-section .mentor-block img.profile { height: 150px; width: 150px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+#mentor-roster .mentor-list-section .mentor-block img.logo { height: 45px; width: 45px; position: absolute; top: 135px; left: 130px; }
+#mentor-roster .mentor-list-section .mentor-block h3 { color: #000; margin: 20px 0px 10px; line-height: 1; font-size: 15px; letter-spacing: 0.15em; transition: color 0.2s ease-in; -moz-transition: color 0.2s ease-in; -webkit-transition: color 0.2s ease-in; -o-transition: color 0.2s ease-in ease-in; }
+#mentor-roster .mentor-list-section .mentor-block p { font-size: 14px; color: #72777a; margin: 0px auto; line-height: 1; }
+#mentor-roster .mentor-list-section .mentor-block:nth-child(4n) { margin-right: 0px; }
+#mentor-roster .mentor-list-section .mentor-block a { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+#mentor-roster .mentor-list-section .join-the-cause { text-align: center; margin: 40px 0px; }
+#mentor-roster .mentor-list-section .join-the-cause h1 { font-weight: 400; font-size: 20px; }
+#mentor-roster .mentor-list-section .join-the-cause .join-button { background: #4b5b64; display: inline-block; font-size: 17px; margin-top: 20px; height: 40px; line-height: 41px; padding: 0px 20px; }
+#mentor-roster .mentor-list-section .join-the-cause .join-button:hover { background: #252525; }
+
+/******************************
+RESPONSIVE STYLES
+*******************************/
+@media screen and (max-width: 1040px) { #mentor-roster .container { width: auto; padding: 0px 20px !important; }
+  #mentor-roster .header .homepage-nav .sign-up-link { display: none; }
+  #mentor-roster .how-it-works-section { padding: 100px 15px; }
+  #mentor-roster .how-it-works-section .how-it-works-inner { width: auto; }
+  #mentor-roster .how-it-works-section section .how-block { display: block; width: 100%; text-align: center; }
+  #mentor-roster .how-it-works-section section .how-block.center { margin-bottom: 30px; }
+  #mentor-roster .how-it-works-section section .how-block.right { text-align: center; }
+  #mentor-roster .footer-section { padding-top: 0px; }
+  #mentor-roster .footer-section .info { width: auto; padding: 10px; }
+  #mentor-roster .footer-section .info-section:last-child { display: none; } }
+@media screen and (max-width: 560px) { #mentor-roster .container { width: auto; padding: 0px !important; }
+  #mentor-roster p.half-width { width: auto; }
+  #mentor-roster .header { height: auto; padding: 20px 0px; }
+  #mentor-roster .header .homepage-nav { padding: 30px 0px; }
+  #mentor-roster .header .homepage-nav li { float: none; }
+  #mentor-roster .header .homepage-nav li a, #mentor-roster .header .homepage-nav li.link { display: none; }
+  #mentor-roster .header .homepage-nav .sign-up-link { display: none; }
+  #mentor-roster .header .content { margin-top: 0px; padding: 40px 20px 70px; }
+  #mentor-roster .header .content p { width: auto; margin-top: 10px; } }
+body.login { background: #1285c6; background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-linear-gradient(#1285c6 10%, #129ec6 90%); /* Chrome 10+, Saf5.1+ */ /* FF3.6+ */ /* IE10 */ /* Opera 11.10+ */ background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2884c9), color-stop(90%, #3c9ec8)); background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-linear-gradient(#2884c9 10%, #3c9ec8 90%); background: url(../images/homepage_v2/background3.png) 300px 450px repeat, linear-gradient(#2884c9 10%, #3c9ec8 90%); /* W3C */ height: 100%; }
+
+.login-body-container { width: 100%; margin: auto; padding-top: 50px; /* make things invisible on start */ opacity: 0; /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */ -webkit-animation: fadeIn ease-in 1; animation: fadeIn ease-in 1; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/ -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: 0.3s; animation-duration: 0.3s; -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+
+/*****************
+LOGIN PAGE
+******************/
+.login-container { min-width: 400px; max-width: 400px; margin: 40px auto 50px; }
+.login-container .header { width: 100%; text-align: center; margin-bottom: 100px; }
+.login-container p.footer { text-align: center; margin: 15px 0px; color: #fff; font-size: 14px; font-weight: 600; }
+.login-container p.footer a { color: #fff; font-weight: 800; }
+
+.login-container .content { margin-top: 30px; background: #fafafa; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; position: relative; }
+.login-container .content .little-dude { position: absolute; width: 70px; left: 50%; margin-left: -35px; top: -36px; }
+.login-container .content .heading { background: #fff; padding: 10px; text-align: center; border-top-right-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-top-right-radius: 4px; border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px; -moz-border-top-left-radius: 4px; border-bottom: 1px solid #ebebeb; }
+.login-container .content .heading h1 { font-size: 20px; }
+.login-container .content .inner { padding: 30px; }
+
+.login-form input[type=text], .login-form input[type=password], .lost-password input[type=text], .lost-password input[type=password] { width: 100%; }
+
+.login-form, .lost-password { margin-bottom: 0px; position: relative; }
+.login-form .errorlist li, .lost-password .errorlist li { width: 100%; list-style-type: none; margin-bottom: 7px; color: #f15b2a; text-align: left; font-weight: 600; margin-left: 3px; }
+
+.forgot-psw-text { color: #a3a3a3; font-weight: 600; margin: 10px 0px 0px 5px; display: inline-block; }
+
+.login-form label { font-weight: bold; font-size: 14px; width: 160px; display: inline-block; }
+.login-form .sign-in-button { float: right; width: 40%; }
+
+.form-action input { float: left; }
+
+.form-password { margin: 0; padding: 0; }
+.form-password .forgot-psw-link { max-height: none; display: block; }
+.form-password a { color: #bbb; text-decoration: none; }
+.form-password a:hover { color: #D04000; text-decoration: none; }
+
+.form-password .icon-question-sign { position: relative; top: -44px; float: right; padding-right: 10px; font-size: 1.4em; height: 0; }
+
+.login-form.signup label { text-align: left; width: 160px; }
+
+.login-form.signup label[for="id_password2"] { vertical-align: middle; }
+
+/*****************
+LOST PASSWORD PAGE
+******************/
+.lost-password { padding: 15px; text-align: center; }
+
+.lost-password .errorlist li { font-size: 13px; }
+
+body.enroll { background: #efefef url(../images/homepage_v2/background3.png); background-repeat: repeat; -webkit-background-size: 100%; background-size: 100%; background: #262f34; background: #1285c6; background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-linear-gradient(#1285c6 10%, #129ec6 90%); /* Chrome 10+, Saf5.1+ */ /* FF3.6+ */ /* IE10 */ /* Opera 11.10+ */ background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2884c9), color-stop(90%, #3c9ec8)); background: url(../images/homepage_v2/background3.png) 300px 450px repeat, -webkit-linear-gradient(#2884c9 10%, #3c9ec8 90%); background: url(../images/homepage_v2/background3.png) 300px 450px repeat, linear-gradient(#2884c9 10%, #3c9ec8 90%); /* W3C */ height: 100%; }
+
+#enroll h3 { color: #a3a3a3; font-size: 14px; font-weight: 400; margin-top: 12px; line-height: normal; }
+#enroll #steps-bar { width: 100%; margin: 0 auto; height: 110px; width: 640px; background-color: #fff; }
+#enroll #steps-bar .step { width: 155px; height: 100%; display: inline-block; text-align: center; position: relative; }
+#enroll #steps-bar .step.current:after { top: 100%; left: 61px; border: 17px solid transparent; content: " "; height: 0; width: 0; position: absolute; border-top-color: #fff; }
+#enroll #steps-bar .step.current > .step-num { background-color: #3e94cd; }
+#enroll #steps-bar .step .step-num { width: 32px; height: 32px; color: #fff; background-color: #a3a3a3; line-height: 1.85; font-size: 19px; font-weight: 700; margin: 25px auto 0 auto; }
+#enroll #mid-bg { overflow: hidden; }
+#enroll #enroll-logo { padding: 60px 0px; position: relative; width: 140px; margin: auto; }
+#enroll .enroll-form p { font-size: 16px; line-height: 1.5; }
+#enroll .enroll-form span.strikethrough { position: relative; }
+#enroll .enroll-form span.strikethrough:before { position: absolute; content: ""; left: 0; top: 38%; right: 0; border-top: 2px solid; border-color: red; -webkit-transform: rotate(-8deg); -ms-transform: rotate(-8deg); transform: rotate(-8deg); opacity: .7; }
+#enroll .enroll-form .signup-mobile { display: none; }
+#enroll .enroll-form .top-section h3.bottom-right { float: right; text-align: right; font-size: 14px; margin-top: 4px; }
+#enroll .enroll-form .top-section h3.bottom-right span { font-size: 16px; font-weight: 700; letter-spacing: 0.03em; }
+#enroll .enroll-form .user-form input { width: 438px; }
+#enroll .enroll-form .billing-form input.cc { width: 200px; }
+#enroll .enroll-form .billing-form input.cc-small { width: 100px; }
+#enroll .enroll-form .billing-form input.stripe-error { border-color: #f15b2a; }
+#enroll .enroll-form .billing-form button.back-button { background-color: #a3a3a3; position: static; width: 100px; margin-top: 4px; }
+#enroll .enroll-form .billing-form button.enroll { width: 175px; }
+#enroll .enroll-form .billing-form label.fine-print { position: absolute; bottom: -9px; right: 26px; font-size: 11px; color: #a3a3a3; font-weight: 600; }
+#enroll .enroll-form .billing-form i { position: absolute; bottom: 24px; right: 12px; font-size: 21px; }
+#enroll .enroll-form .billing-form i.icon-check-sign { color: #76ba3a; }
+#enroll .enroll-form .billing-form i.icon-exclamation-sign { color: #f15b2a; }
+#enroll .enroll-form .billing-form .cc-image { background-image: url(../images/cards@2x.png); -webkit-background-size: 100%; background-size: 100%; width: 300px; height: 167px; margin: 15px auto 0 auto; position: relative; }
+#enroll .enroll-form .billing-form .cc-image label.stripe-error { position: absolute; color: #f15b2a; top: -28px; left: -70px; font-size: 12px; width: 430px; }
+#enroll .enroll-form .billing-form .cc-image .cc-number-preview { position: absolute; color: #a3a3a3; font-size: 14px; top: 58px; left: 20px; letter-spacing: 2; font-weight: 200; }
+#enroll .enroll-form .billing-form .cc-image .cc-number-preview span { display: inline-block; float: left; }
+#enroll .enroll-form .billing-form .cc-image h5 { -webkit-backface-visibility: hidden; position: absolute; color: #a3a3a3; left: 20px; top: 89px; font-weight: 400; }
+#enroll .enroll-form .billing-form .cc-image .visa-logo, #enroll .enroll-form .billing-form .cc-image .amex-logo, #enroll .enroll-form .billing-form .cc-image .mastercard-logo { position: absolute; width: 94px; height: 54px; bottom: 32px; right: 29px; -webkit-background-size: 100%; background-size: 100%; }
+#enroll .enroll-form .billing-form .cc-image .visa-logo { background-image: url(../images/visa-logo@2x.png); }
+#enroll .enroll-form .billing-form .cc-image .amex-logo { background-image: url(../images/amex-logo@2x.png); }
+#enroll .enroll-form .billing-form .cc-image .mastercard-logo { background-image: url(../images/mastercard-logo@2x.png); }
+#enroll .enroll-form.success-page, #enroll .enroll-form.share-page { text-align: center; }
+#enroll .enroll-form.success-page #mobile-later, #enroll .enroll-form.share-page #mobile-later { display: none; }
+#enroll .enroll-form.success-page .welcome-image, #enroll .enroll-form.share-page .welcome-image { width: 390px; }
+#enroll .enroll-form.success-page h1, #enroll .enroll-form.share-page h1 { font-weight: 800; letter-spacing: 4.5; }
+#enroll .enroll-form.success-page h3, #enroll .enroll-form.share-page h3 { color: #333333; margin: 15px auto 20px auto; width: 360px; font-weight: 600; color: #a3a3a3; }
+#enroll .enroll-form.success-page button, #enroll .enroll-form.share-page button { width: 170px; }
+#enroll .enroll-form.success-page input, #enroll .enroll-form.share-page input { margin-left: auto; margin-right: auto; width: 200px; margin-bottom: 15px; }
+#enroll .enroll-form.success-page input:focus, #enroll .enroll-form.share-page input:focus { border-color: #e8e8e8; }
+#enroll .enroll-form.share-page .left { float: left; width: 35%; padding: 15px; }
+#enroll .enroll-form.share-page .left img.share-image { width: 50%; height: auto; margin: 30px auto 10px; }
+#enroll .enroll-form.share-page .left h1 { font-size: 18px; margin-bottom: 10px; letter-spacing: 1.2; }
+#enroll .enroll-form.share-page .left h3.share { color: #72777a; font-weight: 400; font-size: 13px; line-height: 1.4; margin-bottom: 12px; width: auto; margin-top: 0px; }
+#enroll .enroll-form.share-page .left a.twitter-button, #enroll .enroll-form.share-page .left .facebook-button { display: inline-block; width: 200px; text-transform: none; letter-spacing: 0px; font-size: 13px; }
+#enroll .enroll-form.share-page .left a.twitter-button { background-color: #3897ff; margin-bottom: 10px; }
+#enroll .enroll-form.share-page .left .facebook-button { background-color: #39579a; }
+#enroll .enroll-form.share-page .right { float: left; width: 65%; height: 100%; border-left: 1px solid #ddd; }
+#enroll .enroll-form.share-page .right h2 { font-weight: 600; font-size: 18px; }
+#enroll .enroll-form.share-page .right img { margin: 100px auto 30px; }
+#enroll .enroll-form.share-page .right p { margin: 0 auto 20px; letter-spacing: 0px; font-size: 15px; width: 65%; }
+#enroll .enroll-form .shipping-form input.city { width: 285px; }
+#enroll .enroll-form .shipping-form input.state { width: 130px; }
+#enroll .enroll-form .shipping-form input.postal { width: 130px; }
+#enroll .enroll-form .shipping-form input.country { width: 285px; }
+#enroll .enroll-form .shipping-form button.no-thanks { background-color: #a3a3a3; right: 200px; width: 125px; }
+#enroll .enroll-form .left-image-section { width: 250px; }
+#enroll .enroll-form .left-image-section .kit-image { height: 235px; margin: 30px 0px 0px 60px; }
+#enroll .below-form { position: absolute; width: 760px; left: 50%; margin-left: -380px; margin-top: 490px; z-index: -100; }
+#enroll .below-form .testimonial { display: inline-block; width: 230px; margin-right: 20px; }
+#enroll .below-form .testimonial h3 { color: #a3a3a3; font-size: 13px; }
+#enroll .below-form .testimonial .student { display: table; margin-top: 25px; }
+#enroll .below-form .testimonial .student img { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; display: table-cell; width: 50px; height: 50px; }
+#enroll .below-form .testimonial .student .info { display: table-cell; vertical-align: middle; padding-left: 10px; }
+#enroll .below-form .testimonial .student .info label { color: #a3a3a3; display: block; }
+#enroll .below-form .testimonial .student .info label.name { font-size: 16px; font-weight: 700; }
+#enroll .below-form .testimonial:first-child { margin-left: 20px; }
+#enroll .below-form .testimonial:last-child { margin-right: 0px; }
+#enroll .below-form.money-back { margin-top: 470px; }
+#enroll .below-form.money-back h3 { font-size: 15px; }
+#enroll .below-form.money-back i { margin-right: 7px; }
+
+@media screen and (max-width: 560px) { #enroll { padding: 15px; }
+  #enroll .enroll-form { position: relative; width: auto; left: auto; margin-left: 0px; height: auto; }
+  #enroll .enroll-form .top-section h3.bottom-right { float: none; text-align: left; margin-bottom: 10px; }
+  #enroll .enroll-form .left-form-section { width: 100%; height: auto; }
+  #enroll .enroll-form .left-form-section button { position: relative; float: right; right: 0px; bottom: 0px; }
+  #enroll .enroll-form .billing-form button.back-button { margin-top: 0px; }
+  #enroll .enroll-form .user-form input { width: 100%; }
+  #enroll .enroll-form .right-benefits-section { width: 100%; float: none; background: #fafafa; height: auto; border-bottom-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-bottom-right-radius: 4px; }
+  #enroll .enroll-form .right-benefits-section .header-section { width: 100%; margin-left: 0px; }
+  #enroll .enroll-form .right-benefits-section .benefit-row { text-align: center; padding: 15px 0px; }
+  #enroll .enroll-form .right-benefits-section .benefit-row .benefit-copy { float: none; width: auto; margin-top: 0px; padding: 10px; }
+  #enroll .enroll-form .left-photo-section, #enroll .enroll-form .left-photo-section .photo-tips { width: 100%; }
+  #enroll .enroll-form .right-form-section { float: none; width: 100%; height: auto; }
+  #enroll .enroll-form .right-form-section .input-row .input-cont { margin-right: 0px; display: block; }
+  #enroll .enroll-form .right-form-section .input-row .input-cont input { width: 100%; }
+  #enroll .enroll-form .right-form-section button { position: relative; right: 0px; bottom: 0px; float: right; }
+  #enroll .enroll-form textarea { width: 100%; }
+  #enroll .enroll-form.share-page .left { float: none; width: auto; }
+  #enroll .enroll-form.share-page .right { float: none; width: auto; }
+  #enroll .enroll-form #mobile-later { display: block !important; }
+  #enroll .enroll-form #mobile-later p { background: #fafafa; padding: 10px; font-size: 13px; color: #4b5b64; border-bottom-right-radius: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-bottom-left-radius: 4px; }
+  #enroll .enroll-form #create-profile { display: none; }
+  #enroll .below-form { display: none; } }
+.page404 { background: url("../images/homepage_v2/background3.png") repeat scroll top center, -webkit-gradient(linear, left top, left bottom, color-stop(10%, #2884c9), color-stop(90%, #3c9ec8)) repeat scroll 0 0 transparent; background: url("../images/homepage_v2/background3.png") repeat scroll top center, -webkit-linear-gradient(#2884c9 10%, #3c9ec8 90%) repeat scroll 0 0 transparent; background: url("../images/homepage_v2/background3.png") repeat scroll top center, linear-gradient(#2884c9 10%, #3c9ec8 90%) repeat scroll 0 0 transparent; width: 100%; height: 100%; -webkit-background-size: cover; background-size: cover; }
+
+.page404-body-container { position: relative; height: 100%; padding-top: 90px; }
+
+.page404-container { min-width: 650px; max-width: 650px; margin: 0 auto; }
+.page404-container .header { text-align: center; }
+.page404-container .content { position: fixed; top: 50%; left: 50%; margin-top: -190px; margin-left: -325px; text-align: center; }
+.page404-container .content h2, .page404-container .content h1 { color: #fff; font-size: 100px; font-weight: 300; text-align: center; }
+.page404-container .content h2 { font-size: 46px; font-weight: 600; margin-bottom: 30px; }
+.page404-container .content p, .page404-container .content span { color: #4b5b64; font-size: 24px; line-height: 2; }
+.page404-container .content span { display: block; text-align: right; }
+.page404-container .content .back-button { display: inline-block; margin-top: 20px; }
+
+.dude { position: absolute; bottom: 0; background: #0086aa; height: 17px; width: 100%; }
+.dude img { position: absolute; left: 50%; margin-left: -90px; bottom: 8px; }

@@ -1,0 +1,87 @@
+body.login {
+	background:#1285c6;
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -webkit-linear-gradient(#1285c6 10%, #129ec6 90%); /* Chrome 10+, Saf5.1+ */
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -moz-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* FF3.6+ */
+  background:  dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -ms-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* IE10 */
+  background: dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, -o-linear-gradient(#2884C9 10%, #3C9EC8 90%); /* Opera 11.10+ */
+  background:  dl-url('main', 'images/homepage_v2/background3.png') 300px 450px repeat, linear-gradient(#2884C9 10%, #3C9EC8 90%); /* W3C */
+  height:100%;
+}
+
+
+
+.login-body-container{ width:100%; margin:auto; padding-top:50px;
+    /* make things invisible on start */
+    opacity:0;
+    /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1; animation:fadeIn ease-in 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;
+    -webkit-animation-duration:0.3s; -moz-animation-duration:0.3s; animation-duration:0.3s;
+    -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;
+}
+
+/*****************
+LOGIN PAGE
+******************/
+
+.login-container{ min-width:400px; max-width:400px; margin:40px auto 50px;
+  .header{width:100%; text-align:center; margin-bottom:100px;}
+   p.footer{text-align:center; margin:15px 0px; color:#fff; @extend %smooth_text; font-size:14px; font-weight:600;
+    a{color:#fff; font-weight:800;}
+  }
+}
+
+.login-container .content{ margin-top:30px; background:$light-grey-background; @include border-radius(4px);
+  position:relative;
+  .little-dude{position:absolute; width:70px; left:50%; margin-left:-35px; top:-36px;}
+  .heading{background:#fff; padding:10px; text-align:center; @include border-top-right-radius(4px); @include border-top-left-radius(4px);
+    border-bottom:1px solid $light-grey-border;
+    h1{font-size:20px; @extend %smooth_text;}
+  }
+  .inner{padding:30px;}
+}
+
+.login-form input[type=text], .login-form input[type=password], .lost-password input[type=text], .lost-password input[type=password]{
+  @extend %textfield; width:100%;
+}
+
+
+.login-form, .lost-password { margin-bottom:0px; position:relative;
+    .errorlist li{width: 100%; list-style-type: none; margin-bottom: 7px; color:$orange; text-align:left; font-weight:600; 
+      @extend %smooth_text; margin-left:3px;}
+}
+
+.forgot-psw-text{color:$light-grey; font-weight:600; @extend %smooth_text; margin:10px 0px 0px 5px; display:inline-block;}
+
+.login-form{
+  label{ font-weight:bold; font-size:14px; width:160px; display:inline-block; }
+  .sign-in-button{@extend %button; float:right; width:40%; @extend %smooth_text;}
+} 
+
+.form-action input{ float:left; }
+
+
+.form-password {margin:0; padding:0;
+  .forgot-psw-link {  max-height: none; display:block; }
+  a {color:#bbb; text-decoration:none; 
+    &:hover { color:#D04000; text-decoration:none;}
+  }
+}
+
+
+.form-password .icon-question-sign {position:relative; top:-44px; float:right; padding-right:10px; font-size:1.4em; height:0;}
+
+.login-form.signup label{ text-align:left; width:160px; }
+.login-form.signup label[for="id_password2"]{ vertical-align:middle;}
+
+
+
+/*****************
+LOST PASSWORD PAGE
+******************/
+
+.lost-password{padding:15px; text-align:center;}
+
+.lost-password .errorlist li{ font-size:13px; }
+

@@ -1,0 +1,103 @@
+/* Animation util mixins */
+@mixin transition($property, $time, $function: ease) {
+    transition:$property $time $function;
+    -moz-transition:$property $time $function;
+    -webkit-transition:$property $time $function;
+    -o-transition:$property $time $function $function;
+}
+
+@mixin animation($animation) {
+    -webkit-animation: #{$animation};
+    -moz-animation: #{$animation};
+    -ms-animation: #{$animation};
+    animation: #{$animation};
+}
+
+@mixin animation-delay($animation-delay) {
+    -webkit-animation-delay: #{$animation-delay};
+    -moz-animation-delay: #{$animation-delay};
+    animation-delay: #{$animation-delay};
+}
+
+@mixin animation-fill-mode($animation-fill-mode) {
+    -webkit-animation-fill-mode: #{$animation-fill-mode};
+    -moz-animation-fill-mode: #{$animation-fill-mode};
+    animation-fill-mode: #{$animation-fill-mode};
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+/* Weird Safari thing */
+/* http://stackoverflow.com/questions/3461441/prevent-flicker-on-webkit-transition-of-webkit-transform */
+@mixin prevent-flicker() {-webkit-backface-visibility: hidden;}
+
+
+/* Create specific animations */
+@include keyframes(fadeIn) {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@include keyframes(fadeInUp) {
+    0% {opacity: 0; @include transform(translateY(20px));}
+    100% {opacity: 1; @include transform(translateY(0));}
+}
+
+@include keyframes(fadeInUpBig) {
+    0% {visibility: visible; @include transform(translateY(2000px));}
+    100% {visibility: visible; @include transform(translateY(0));}
+}
+
+@include keyframes(fadeInDown) {
+    0% {opacity: 0; @include transform(translateY(-20px));}
+    100% {opacity: 1; @include transform(translateY(0));}
+}
+
+@include keyframes(shake) {
+    0%, 100% {@include transform(translateX(0));}
+    10%, 30%, 50%, 70%, 90% {@include transform(translateX(-10px));}
+    20%, 40%, 60%, 80% {@include transform(translateX(10px));}
+}
+
+@include keyframes(swing) {
+  20% {@include transform(rotate(15deg));}
+  40% {@include transform(rotate(-10deg));}
+  60% {@include transform(rotate(5deg));}
+  80% {@include transform(rotate(-5deg));}
+  100% {@include transform(rotate(0deg));}
+}
+
+
+/* Placeholder selectors for animations */
+%fadeIn {@include animation(fadeIn 1s);}
+%fadeInUp {@include animation(fadeInUp 1s);}
+%fadeInUpBig {@include animation(fadeInUpBig 1s);}
+%fadeInDownFast {@include animation(fadeInDown 0.25s);}
+%shake {@include animation(shake 0.5s);}
+%swing {@include animation(swing 1s);}
+
+
+/* Placeholder selectors for transitions */
+%smooth-background-hover {@include transition(background-color, 0.2s);}
+%smooth-color-hover {@include transition(color, 0.2s);}
+%smooth-border-hover {@include transition(border, 0.2s)}
